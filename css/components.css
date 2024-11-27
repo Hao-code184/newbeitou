@@ -1,50 +1,85 @@
+@import url('reset.css');
+
 
 /*--------------- header ---------------*/
+
+body{
+        /* layout */        
+    width: 100%;
+        /* style */
+    background: var(--alternative-, #93DBC8);
+    line-height: 1.6;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+}
+
+/* main */
+main{
+    width: 100%;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    background: var(--alternative-, #93DBC8);
+}
+
 header{
-    display: flex;
     width: 100%;
     height: 80px;
-    padding: 0px 166px 0px 120px;
-    box-sizing: border-box;
+    /* display: flex;
     align-items: center;
-    flex-shrink: 0;
+    flex-shrink: 0; */
     position: sticky;
     top: 0;
+    left: 0;
+    overflow: hidden;
     z-index: 2;
 
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.logo img{
+    display: inline-block;
+    width: 136px;
+    height: 80px;
+    background-color: #ccc;
+    float:left;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
 .navigation{
     height: 100%;
     display: flex;
+    flex-basis: 70px;
+    flex-grow: 1;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    float:right;
 }
 
 .navigation li{
     display: flex;
-    width: 98px;
-    height: 80px;
-    text-align: center;
+    height: 100%;
     align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-
+    flex-shrink: 0;       
 }
 
 .page-switcher{
     display: block;
-    width: 100%;
     line-height: 80px;
     background-color: #fff;
     text-decoration: none;
+    text-align: center;
     color: #000;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
+    padding: 0 25px;
+    box-sizing: border-box; 
+    
 }
 
 .page-switcher:hover{   
@@ -52,46 +87,14 @@ header{
     color: white;
 }
 
-.tem-logo img{
-    display: inline-block;
-    width: 133px;
-    height: 80px;
-    background-color: #ccc;
-    margin: 0 271px 0 auto;
-}
 
-.tem-logo:hover{
-    cursor: pointer;
-}
 
-.search{
-    width: 300px;
-    height: 48px;
-    flex-shrink: 0;
-    padding-bottom: 12px;
-    box-sizing: border-box;
+.nav-right{
     display: flex;
-
-    border-radius: 8px;
-    background: var(--main-steam, #E69120);
+    align-items: center;
 }
 
-.search img{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-}
 
-.search input{
-    display: inline-block;
-    width: 256px;
-    height: 35px;
-    flex-shrink: 0;
-    background: var(--main-steam, #E69120);
-    border: 0;
-    border-bottom: 1px solid #FFF;
-}
 
 /* -----------------footer------------- */
 footer{

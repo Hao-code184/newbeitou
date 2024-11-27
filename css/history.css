@@ -3,33 +3,16 @@
 
 html{}
 
-body{
-        /* layout */        
-    width: 100%;
-        /* style */
-    background: var(--alternative-, #93DBC8);
-    line-height: 1.6;
-    font-style: normal;
-    font-weight: 400;
-}
+body{}
 
 /* main */
-main{
-    width: 1200px;
-    flex-shrink: 0;
-    margin: 0 auto;
-
-    background: var(--alternative-, #93DBC8);
-}
+main{}
 /* header */
-
-header{
-    z-index: 2;
-}
 
 .navigation li:nth-child(2){
     border-bottom: 4px solid #E69120;
 }
+
 
     /* top banner */
 .topimg{
@@ -97,7 +80,7 @@ header{
     position: relative;
     margin-bottom: 64px;
 
-    background-image: url('../img/2.jpg');
+    background-image: url('../img/timeline.png');
     background-size: cover;
 }
 
