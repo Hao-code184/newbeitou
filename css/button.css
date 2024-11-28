@@ -1,0 +1,36 @@
+/* ----------button back-to-top ----------*/
+.back-to-top{
+    width: 30px;
+    height: 30px;
+    color: #E69120;
+    border: 2.5px solid #E69120;
+    border-radius: 50%;
+
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-weight:bold;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 1;
+
+}
+
+/* -----------button of read-more---------- */
+.read-more {
+    display: block;
+    line-height: 40px;
+    width: 108px;
+    color: #FFF;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    background: var(--main-steam, #E69120);
+    border-radius: 7px;
+}
+
+.read-more:hover {
+    background-color: var(--alternative-, #93DBC8);
+}

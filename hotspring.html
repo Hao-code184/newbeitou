@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/hotspring.css">
+    <link rel="stylesheet" href="./css/hotspring.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,40 +13,35 @@
 <body>
     
     <header>
-        <!-- navigation list-->
-        <ul class="navigation">
-            <li><a href="./hotspring.html" class="page-switcher">溫泉</a></li>
-            <li><a href="./history.html" class="page-switcher">歷史</a></li>
-            <li><a href="./buildings.html" class="page-switcher">建築</a></li>
-            <li><a href="./nature.html" class="page-switcher">自然</a></li>
-        </ul>
-        <!-- logo -->
-         <div class="tem-logo">
-            <a href="index.html"><img id="logo-header" src="./img/logo 2 蒸氣.png" alt=""></a>
-        </div>
-        <!-- search -->
-        <div class="search">
-            <img src="./img/search.png" alt="" class="search-icon">
-            <input type="search" >
-        </div>
-    </header>
-
-
-    <!--top banner  -->
-    <main>
-        <div class="topimg" id="top"></div>
         
-        <!-- various 排版 -->
-            <!-- img-back -->
-        <div class="img-back">
-            <div class="titles-front">
-                <h2>療育力量</h2>
-                <p>來到新北投，溫泉是不可錯過的招牌體驗。這裡的溫泉擁有豐富的地熱資源，水質多樣，不僅能舒緩疲勞，還對身體有諸多益處，讓身心徹底放鬆。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <img src="./img/13.jpg" alt="">
+        <!-- logo -->
+        <div class="logo">
+           <a href="index.html"><img id="logo-header" src="./img/logo 2 蒸氣.png" alt=""></a>
+       </div>
+           <!-- navigation list-->
+       <div class="nav-fav">
+           <ul class="navigation">
+               <li><a href="./hotspring.html" class="page-switcher">溫泉</a></li>
+               <li><a href="./history.html" class="page-switcher">歷史</a></li>
+               <li><a href="./buildings.html" class="page-switcher">建築</a></li>
+               <li><a href="./nature.html" class="page-switcher">自然</a></li>
+           </ul>
+           <a href="myfav.html"><i class="fa-solid fa-heart"></i></a>
+           <a href="myfav.html"><i class="fa-solid fa-user"></i></a>
+           
+       </div>
+       
+       
+   </header>
+
+    <main>
+        <!-- top banner -->
+        <div class="top-banner" id="top">
+            <h1>放鬆 IN 新北投</h1>
+            <p></p>
         </div>
-            <!-- multi-banners -->
+
+        <!-- 3 banners -->
         <div class="multi-banners">
             <h2>三種溫泉水</h2>
             <div class="multi-banners-out">
@@ -67,7 +62,8 @@
                 </div>
             </div>
         </div>
-            <!-- random layout -->
+
+        <!-- random layout -->
         <div class="random">
             <img src="./img/18.jpg" alt="" class="random-img-first">
             <img src="./img/19.jpg" alt="" class="random-img-second">
@@ -87,18 +83,65 @@
             </div>
         </div>
 
-        <!-- mid-title & button -->
-        <div class="mid-title-button">
-            <h2>療育啟程</h2>
-            <p>在新北投溫泉，體驗身心靈的療癒旅程，讓泉水的溫暖與自然的寧靜，重拾內心的平和與能量。
-            </p>
-            <a href="#" class="read-more">閱讀更多</a>
+        <!-- grid: img & content -->
+         <!-- use grid, 
+          rows:a、b~
+          columns:1、2~
+          -->
+        <div class="cross">
+            <div class="a-1">
+                <h2>次標題</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, minima.</p>
+            </div>
+            <img src="" alt="" class="a-2">
+            <div class="b-1">
+                <h2>次標題</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, minima.</p>
+            </div>
+            <img src="" alt="" class="b-2">
         </div>
-
         
 
 
+        <!-- activity news -->
+        <div class="avtivities">
+            <h2>活動消息</h2>
+            <div class="avtivities-banners">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="" alt="">
+                            <h3>次標題</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" alt="">
+                            <h3>次標題</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" alt="">
+                            <h3>次標題</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="left">
+                <i class="fa-solid fa-caret-left"></i>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-caret-right"></i>
+            </div>
+        </div>       
+
+
     </main>
+
     <!-- footer -->
     <footer>
         <ul class="out-list">
