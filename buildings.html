@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css links -->
     <link rel="stylesheet" href="css/buildings.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>建築</title>
 
 </head>
@@ -16,15 +20,15 @@
         
         <!-- logo -->
         <div class="logo">
-           <a href="index.html"><img id="logo-header" src="./img/logo 2 蒸氣.png" alt=""></a>
+           <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
        </div>
            <!-- navigation list-->
        <div class="nav-fav">
            <ul class="navigation">
-               <li><a href="./hotspring.html" class="page-switcher">溫泉</a></li>
-               <li><a href="./history.html" class="page-switcher">歷史</a></li>
-               <li><a href="./buildings.html" class="page-switcher">建築</a></li>
-               <li><a href="./nature.html" class="page-switcher">自然</a></li>
+            <li><a href="hotspring.html" class="page-switcher" id="hotspring">溫泉</a></li>
+            <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
+            <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
+            <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
            </ul>
            <a href="myfav.html"><i class="fa-solid fa-heart"></i></a>
            <a href="myfav.html"><i class="fa-solid fa-user"></i></a>
@@ -33,122 +37,163 @@
        
        
    </header>
-
-
-    <!--top banner  -->
+    
     <main>
-        <div class="topimg" id="top"></div>
         
-        
-            <!-- img-back -->
-        <div class="img-back">
-            <div class="titles-front">
-                <h2>古今碰撞</h2>
-                <p>新北投的建築融合日治時期與現代風格，歷史與現代的碰撞，彷彿帶領人穿越時光，感受獨特的文化氛圍。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <img src="./img/15.jpg" alt="">
+        <!--top banner  -->
+        <div class="top-banner" id="top">
+            <h1>新北投建築之美</h1>
+            <p>穿越時光，感受新北投古今交融的建築之美</p>
         </div>
 
-            <!-- random layout -->
-        <div class="random">
-            <img src="./img/30.jpg" alt="" class="random-img-first">
-            <img src="./img/31.jpg" alt="" class="random-img-second">
-            <img src="./img/32.jpg" alt="" class="random-img-third">
+        <!-- inpage nav -->
+        <ul class="inpage-nav">
+            <li><a href="#three-buttons">三大地標</a></li>
+            <li><a href="#cross">發展階段</a></li>
+            <li><a href="#random">其他建築</a></li>
+        </ul>
+
+        <!-- 3 buttons -->
+        <div class="three-buttons" id="three-buttons">
+            <div class="buttons-titles" id="nb-hs-musuem">
+                <h2>新北投溫泉博物館（Beitou Hot Spring Museum）</h2>
+                <p>新北投溫泉博物館是新北投區最具代表性的歷史建築之一，原為日治時期的「新北投温泉社會館」，建於1913年，擁有典型的日式建築風格。這座歷史建築在二戰後經過多次修復與改建，最終於1998年重新開放為博物館，專門展示與台灣溫泉文化有關的各種資料和物品。博物館內有大量珍貴的溫泉歷史文物，包括古老的浴池設施、溫泉開採工具以及日治時期的相關檔案，讓參觀者得以了解新北投作為溫泉重鎮的發展過程。
+                    <br>
+                    除了溫泉歷史的展示，博物館的建築本身也值得一遊，外觀保存了當時的日式木造結構和精緻的細節裝飾，融合了當時的建築藝術與自然景觀。走進博物館，不僅能夠回顧新北投的溫泉歷史，也能深刻體會當時社會文化的變遷，是了解新北投獨特歷史與文化的最佳場所。</p>
+            </div>
+            <!-- 
+            <div class="buttons-titles" id="bt-obj-museum">
+                <h2>北投文物館（Beitou Museum）</h2>
+                <p>北投文物館是一座日式建築，建於1921年，曾是高級溫泉旅館「佳山旅館」。這座三層樓的木造建築以傳統日本工藝打造，結構精緻而堅固，充分展現了日式建築的美感。如今，北投文物館成為一個文化保存與展示的場所，內部收藏了大量與北投歷史、溫泉文化相關的文物，以及台灣傳統民俗和藝術品，讓人能夠一窺昔日的生活風貌。
+                    <br>
+                    文物館的展區包括日治時期的溫泉文化展示、日本茶道體驗空間，以及北投地區傳統藝術的展覽。訪客可以漫步於榻榻米鋪設的走廊，欣賞精美的和式庭園和傳統建築的細節，感受平靜而優雅的氛圍。此外，館內還會定期舉辦主題展覽與文化活動，讓歷史與現代對話，是探索北投過往與感受文化深度的絕佳地點。
+                </p>
+            </div>
+            <div class="buttons-titles" id="er-temple">
+                <h2>地藏庵（Jizo Temple）</h2>
+                <p>地藏庵是一座富有靈性與歷史意義的古廟，座落於新北投的山腳下，已有百年以上的歷史。地藏庵以供奉地藏菩薩聞名，傳說地藏菩薩保護信徒免受災難，特別是在地震、洪水等天災頻繁的地區。這座廟宇在日治時期和戰後都曾進行多次修繕，現今保留著早期台灣宗教建築的風貌。
+                    <br>
+                    走進地藏庵，映入眼簾的是寧靜的庭院與樸素的廟宇建築，內部供奉的地藏菩薩像端莊莊嚴，香火不斷，吸引了不少善男信女前來祈求平安與庇佑。每逢農曆節日，廟中還會舉辦熱鬧的祭祀活動，充滿地方傳統特色。地藏庵不僅是一座宗教聖地，更是北投居民心靈上的依靠，見證了這片土地的發展與變遷。
+                </p>
+            </div>
+            -->
+            <div class="buttons-area">
+                <ul>
+                    <li>新北投溫泉博物館</li>
+                    <li>北投文物館</li>
+                    <li>地藏庵</li>
+                </ul>
+            </div>
+                        
+        </div>
+
+        <!-- (cross)grid: img & content -->
+        <div class="cross" id="cross">
+            <div class="box a-1">
+                <h2>清朝時期石湯屋</h2>
+                <p>簡約的石製浴池，周圍環繞著自然岩壁與蒸騰熱氣，清朝時期的湯屋呈現原始溫泉文化的樸實之美。</p>
+                <a href="#" class="read-more">閱讀更多</a>
+            </div>
+            <img src="img/bu_2-1.png" alt="" class="a-2">
+            <div class="box b-2">
+                <h2>日治時期溫泉旅館</h2>
+                <p>木造建築搭配榻榻米地板與日式庭園景觀，日治時期的溫泉旅館完美融合傳統與自然之美。</p>
+                <a href="#" class="read-more">閱讀更多</a>
+            </div>
+            <img src="img/bu_2-2.png" alt="" class="b-1">
+            <div class="box c-1">
+                <h2>現代化溫泉飯店</h2>
+                <p>豪華房間內的私人石製溫泉池，搭配大窗戶的山景設計，將傳統溫泉文化與現代舒適感完美結合。</p>
+                <a href="#" class="read-more">閱讀更多</a>
+            </div>
+            <img src="img/bu_2-3.png" alt="" class="c-2">
+        </div>
+
+        <!-- staggered -->
+        <div class="random" id="random">
+            <img src="img/bg_straggered_1.png" alt="" class="mid-base">
+            <img src="img/bu_3-1.png" alt="" class="random-img-first">
+            <img src="img/bu_3-2.png" alt="" class="random-img-second">
+            <img src="img/bu_3-3.png" alt="" class="random-img-third">              
             <div class="random-tit-first">
-                <h2>古色古香</h2>
-                <p>古色古香的日式建築與現代風情相得益彰，新北投的每一棟建築都見證了時光流轉的美麗故事。</p>
+                <h2>北投溫泉博物館</h2>
+                <p>外觀 : 北投溫泉博物館的建築源自殖民時期公共浴場，外觀融合日式木結構與現代石材細節，重現溫泉文化的輝煌歷史。</p>
                 <a href="#" class="read-more">閱讀更多</a>
             </div>
             <div class="random-tit-second">
-                <p>新北投的建築風格多樣，從傳統日式建築到現代溫泉旅館，無不展現著台灣歷史與現代的和諧交融。</p>
+                <p><span>內部</span> : 博物館內保留了殖民時期的浴場設施與日式木結構，展示老照片和文物，傳遞北投溫泉文化的深厚底蘊。</p>
             </div>
             <div class="random-tit-third">
-                <h2>和諧共存</h2>
-                <p>走在新北投街頭，日式建築的屋頂與現代設施並肩而立，營造出濃厚的歷史氛圍和現代生活的和諧共存。</p>
+                <h2>北投地藏庵</h2>
+                <p>地藏庵以其傳統中式建築風格聞名，紅瓦屋頂與精緻石雕燈籠點綴山坡，營造寧靜祥和的靈性氛圍，展現歷史與文化的交融。</p>
                 <a href="#" class="read-more">閱讀更多</a>
             </div>
         </div>
-
-
-            <!-- left & right  -->
-        <div class="rightimg">
-            <div class="titles-l">
-                <h2>美麗痕跡</h2>
-                <p>新北投的建築細節充滿歷史的痕跡，日治時期的浴場與現代溫泉設施，勾畫出一幅美麗的文化畫卷。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <img src="./img/34.jpg" alt="">
-        </div>
-
-        <div class="leftimg">
-            <div class="titles-r">
-                <h2>角落魅力</h2>
-                <p>新北投的建築，每一個角落都蘊藏著歷史的故事，無論是古老的溫泉浴場還是現代化的休憩場所，都富有獨特魅力。
-                </p>
-                <a href="" class="read-more"></a>
-            </div>
-            <img src="./img/35.jpg" alt="">
-        </div>
-
-
-            <!-- multi-banners -->
-        <div class="multi-banners">
-            <h2>更多建築</h2>
-            <div class="multi-banners-out">
-                <div class="multi-banners-in">
-                    <img src="./img/37.jpg" alt="">
-                    <h3>古樸日式</h3>
-                    <p>新北投的日式建築古樸典雅，與自然景觀相融合，讓人彷彿回到了百年前的台灣，感受歷史的深度與美感。</p>
-                </div>
-                <div class="multi-banners-in">
-                    <img src="./img/38.jpg" alt="">
-                    <h3>雙重體驗</h3>
-                    <p>在新北投，古老的溫泉建築與現代設施完美融合，為遊客帶來獨特的歷史和現代雙重體驗。</p>
-                </div>
-                <div class="multi-banners-in">
-                    <img src="./img/39.jpg" alt="">
-                    <h3>乘載故事</h3>
-                    <p>新北投的建築風格延續百年，從日治時期的木造建築到現代化的溫泉度假村，每一座建築都講述著過去的故事。</p>
-                </div>
-            </div>
-        </div>      
 
     </main>
+
     <!-- footer -->
     <footer>
         <ul class="out-list">
             <li>
-                <p>探索新北投</p>
+                <h4>探索新北投</h4>
                 <ul class="in-list">
-                    <li><a href="">即時影像</a></li>
-                    <li><a href="">你好，新北投</a></li>
-                    <li><a href="">城鎮故事</a></li>
+                    <li><a href="#">即時影像</a></li>
+                    <li><a href="#">你好，新北投</a></li>
+                    <li><a href="#">城鎮故事</a></li>
                 </ul>
             </li>
-            <li><p>活動新訊</p>
+            <li>
+                <h4>活動新訊</h4>
                 <ul class="in-list">
-                    <li><a href="">最新消息</a></li>
-                    <li><a href="">活動展演</a></li>
-                    <li><a href="">熱門話題</a></li>
+                    <li><a href="#">最新消息</a></li>
+                    <li><a href="#">活動展演</a></li>
+                    <li><a href="#">熱門話題</a></li>
                 </ul></li>
-            <li><p>旅遊指南</p>
+            <li>
+                <h4>旅遊指南</h4>
                 <ul class="in-list">
-                    <li><a href="">必吃美食</a></li>
-                    <li><a href="">必遊景點</a></li>
-                    <li><a href="">景點地圖</a></li>
+                    <li><a href="#">必吃美食</a></li>
+                    <li><a href="#">必遊景點</a></li>
+                    <li><a href="#">景點地圖</a></li>
                 </ul></li>
-            <li><p>我們的社群</p>
+            <li>
+                <h4>我們的社群</h4>
                 <ul class="in-list">
-                    <li><a href="#">FB:newbetiou</a><img src="./img/fb.png" alt=""></li>
-                    <li><a href="#">IG:@newbetiou</a><img src="./img/instagram_2111463.png" alt=""></li>
-                    <li><a href="#">X:@newbetiou</a><img src="./img/X.png" alt=""></li>
-                </ul></li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                             NewBeitiou
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-line"></i>
+                             ID:newbeitiou006
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                             @newbeitiou
+                        </a>
+                        
+                    </li>
+                </ul>
+            </li>
         </ul>
         <p class="copyright">Copy rights here</p>
     </footer>
 
-    <a href="#top" class="backtotop">top</a>
+    <!-- button back-to-top -->
+    <a href="#top" class="back-to-top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </a>
 
+<!-- font awsome -->
+<script src="https://kit.fontawesome.com/2474fb8bba.js" crossorigin="anonymous"></script>
+<!-- JS & JQuery -->
 </body>
 </html>

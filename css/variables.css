@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #4ED7AE;
+    --secondary-color: #E69120;
+    --background-color: #FFFDD0;
+    --text-color: #000;
+    --background-color: transparent;
+    --border-size:10px;
+    --accent-color:#E69120;
+  }

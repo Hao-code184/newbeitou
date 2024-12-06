@@ -1,64 +1,76 @@
 /* -----------------footer------------- */
+    /* content 的量 隨著斷點增減 */
 footer{
     width: 100%;
-    height: 320px;
+    /* height: 320px; */
     flex-shrink: 0;
-    padding-top: 63px;
+    padding-top: 50px;
     box-sizing: border-box;
-
-    background: #565A6E;
-}
-
-.out-list{
-    display: flex;
-    width: 1010px;
-    align-items: center;
-    gap: 87px;
-    margin: 0 auto 90px;
-}
-
-.out-list li{
-    width: 187px;
-    /* height: 252px; */
-    flex-shrink: 0;
+    overflow: hidden;
 
     background-color: #565A6E;
 }
 
-.out-list li p{
+.out-list{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    /* align-items: center; */
+    justify-content: space-between;
+
+    background-color: #565A6E;
+
+    margin: 0 auto 40px;
+    overflow: hidden;
+}
+
+.out-list>li{
+    flex-basis: 180px;
+    max-width: 60vw;
+    height: 100%;
+    flex-shrink: 0;
+
+    margin-top: 15px;
+
+    background-color: #565A6E;
+}
+
+.out-list li h4{
     color: #FFF;
-    font-size: 20px;
-    margin-bottom: 28px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .in-list{
-    width: 187px;
+    width: 100%;
     flex-shrink: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
-    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .in-list li a{
     color: #FFF;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-decoration: none;
 }
 
 .in-list li a:hover{
-    color: var(--main-hot-spring, #4ED7AE);
+    color: #E69120;
     text-decoration: underline;
 }
 
-.in-list li img{
-    display: block;
-    width: 12px;
-    height: 12px;
+.in-list li i{
+    font-size: 1.6rem;
+    color: white;
 }
 
 .copyright{
-    display: block;
+    /* display: block; */
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.6rem;
+    line-height: 50px;
     text-align: center;
 }

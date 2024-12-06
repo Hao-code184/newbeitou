@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css links -->
     <link rel="stylesheet" href="css/nature.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>自然</title>
 
 </head>
@@ -16,15 +20,15 @@
         
         <!-- logo -->
         <div class="logo">
-           <a href="index.html"><img id="logo-header" src="./img/logo 2 蒸氣.png" alt=""></a>
+           <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
        </div>
            <!-- navigation list-->
        <div class="nav-fav">
            <ul class="navigation">
-               <li><a href="./hotspring.html" class="page-switcher">溫泉</a></li>
-               <li><a href="./history.html" class="page-switcher">歷史</a></li>
-               <li><a href="./buildings.html" class="page-switcher">建築</a></li>
-               <li><a href="./nature.html" class="page-switcher">自然</a></li>
+            <li><a href="hotspring.html" class="page-switcher" id="hotspring">溫泉</a></li>
+            <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
+            <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
+            <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
            </ul>
            <a href="myfav.html"><i class="fa-solid fa-heart"></i></a>
            <a href="myfav.html"><i class="fa-solid fa-user"></i></a>
@@ -33,121 +37,156 @@
        
        
    </header>
-
-
-    <!--top banner  -->
+    
     <main>
-        <div class="topimg" id="top"></div>
         
-        
-            <!-- img-back -->
-        <div class="img-back">
-            <div class="titles-front">
-                <h2>陶醉自然</h2>
-                <p>新北投的自然景色令人陶醉，山川與溫泉相依，清新的空氣和迷人的風光讓人感受到大自然的純淨與力量。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <img src="./img/3.jpg" alt="">
+        <!--top banner  -->
+        <div class="top-banner" id="top">
+            <h1>新北投自然美景</h1>
+            <p>探索新北投的溫泉與綠意，感受身心的純粹放鬆。</p>
         </div>
 
-            <!-- random layout -->
-        <div class="random">
-            <img src="./img/4.jpg" alt="" class="random-img-first">
-            <img src="./img/5.jpg" alt="" class="random-img-second">
-            <img src="./img/6.jpg" alt="" class="random-img-third">
+        <!-- inpage nav -->
+        <ul class="inpage-nav">
+            <li><a href="#three-buttons">三大特色</a></li>
+            <li><a href="#cross">著名景點</a></li>
+            <li><a href="#random">其他景點</a></li>
+        </ul>
+
+        <!-- 3 buttons -->
+        <div class="three-buttons" id="three-buttons">
+            <div class="buttons-titles" id="nb-hs-musuem">
+                <h2>溫泉與地熱奇觀</h2>
+                <p>北投以其豐富的地熱資源聞名，其中地熱谷是最具代表性的景點之一。地熱谷是由火山活動形成的天然地熱區域，蒸騰的熱氣和硫磺氣息交織，形成獨特的自然奇觀。地熱谷的泉水溫度高達90至100攝氏度，水中含有豐富的礦物質，對皮膚有護理效果，也成為溫泉療養的理想場所。地熱的形成與火山地質有著密切的聯繫，周圍的地形特徵如火山岩層、溫泉源頭都是地質運動的見證。不僅如此，這片地熱區還孕育了特有的生態環境，包括能耐高溫的微生物和植物，成為科學家研究的寶庫。地熱谷不僅是自然景觀，更是北投溫泉文化的核心地帶，吸引無數遊客前來一探這片熱氣縈繞的仙境。</p>
+            </div>
+            <!-- 
+            <div class="buttons-titles" id="bt-obj-museum">
+                <h2>山林與步道探索</h2>
+                <p>北投擁有多條美麗的山林步道，為自然愛好者提供了絕佳的探索機會。其中，竹子湖步道以茂密的竹林與清新的空氣著稱，漫步其中，耳邊只有微風吹拂竹葉的聲音，令人心曠神怡。而七星山登山道則是另一個不可錯過的景點，這條路徑穿越北投的火山地帶，沿途可以見到奇特的火山岩層與稀有植物，登頂後更能飽覽台北市的全景。此外，溫泉溪步道也是一個獨具特色的路線，沿著溪流蜿蜒而行，欣賞兩側的自然景觀和溫泉瀑布，為步行增添一絲冒險的趣味。北投的山林步道結合了自然、文化與運動，是一處放鬆身心的理想場所。</p>
+            </div>
+            <div class="buttons-titles" id="er-temple">
+                <h2>四季景色與動植物生態</h2>
+                <p>北投的自然景觀隨四季變化展現出不同的魅力。春天，櫻花盛開，沿著步道可以看到粉色的花海與青翠的山林交相輝映；夏天則是螢火蟲的季節，夜晚的山林裡閃爍著點點星光般的螢光，浪漫又迷人。秋天，楓葉染紅了山坡，給北投的溫泉區增添了一抹溫暖的色彩，而冬季的寒冷天氣與溫暖的溫泉水形成鮮明對比，讓人倍感舒適。這片自然環境還孕育了豐富的生態系統，包括稀有植物如台灣蘭，以及常見的動物如山雀、松鼠和各類昆蟲，為遊客提供了多樣的生態觀察機會。四季流轉，北投的自然始終如詩如畫，成為人們療癒身心的最佳選擇。</p>
+            </div>
+            -->
+            <div class="buttons-area">
+                <ul>
+                    <li>溫泉與地熱奇觀</li>
+                    <li>山林與步道探索</li>
+                    <li>四季景色與動植物生態</li>
+                </ul>
+            </div>
+                        
+        </div>
+
+        <!-- (cross)grid: img & content -->
+        <div class="cross" id="cross">
+            <div class="box a-1">
+                <h2>地熱谷</h2>
+                <p>地熱谷煙霧繚繞，熱泉與岩石交織出壯麗景觀，見證北投火山地質的獨特魅力，吸引無數遊客探索。</p>
+                <a href="#" class="read-more">閱讀更多</a>
+            </div>
+            <img src="img/na_3-1.png" alt="" class="a-2">
+            <div class="box b-2">
+                <h2>陽竹步道</h2>
+                <p>竹林步道幽靜宜人，木階小徑蜿蜒而上，清溪伴隨，邀請旅人融入北投山林，感受自然的純粹之美。</p>
+                <a href="#" class="read-more">閱讀更多</a>
+            </div>
+            <img src="img/na_3-2.png" alt="" class="b-1">
+            <div class="box c-1">
+                <h2>春天花季</h2>
+                <p>北投春櫻盛放，粉紅花海點綴綠山與藍天，展現四季更迭的絕美風采，吸引自然愛好者前來欣賞。</p>
+                <a href="#" class="read-more">閱讀更多</a>
+            </div>
+            <img src="img/na_3-3.png" alt="" class="c-2">
+        </div>
+
+        <!-- staggered -->
+        <div class="random" id="random">
+            <img src="img/bg_straggered_1.png" alt="" class="mid-base">
+            <img src="img/na_3-1.png" alt="" class="random-img-first">
+            <img src="img/na_3-2.png" alt="" class="random-img-second">
+            <img src="img/na_3-3.png" alt="" class="random-img-third">              
             <div class="random-tit-first">
-                <h2>親近自然</h2>
-                <p>擁抱大自然，溫泉水潺潺流動，山脈綠意盎然，為人們提供一個放鬆身心、親近自然的理想場所。</p>
+                <h2>龍鳳谷</h2>
+                <p>龍鳳谷湯泉池，翠綠環繞下的湛藍水池冒著熱氣，展現獨特的地熱景觀與北投溫泉文化的壯麗場景。</p>
                 <a href="#" class="read-more">閱讀更多</a>
             </div>
             <div class="random-tit-second">
-                <p>新北投的自然美景如詩如畫，山巒起伏、泉水湧流，是放鬆心情、享受大自然恩賜的絕佳選擇。</p>
+
+                <p><span>七星山</span>，七星山步道，火山岩層與綠林相伴，木製階梯蜿蜒而上，提供壯麗景觀與寧靜山野氛圍，是登山愛好者的勝地。</p>
             </div>
             <div class="random-tit-third">
-                <h2>成為自然</h2>
-                <p>新北投，四季皆美，山間雲霧繚繞，泉水潺潺流動，帶給人無限的平靜與舒適，成為心靈的療癒天堂。</p>
+                <h2>北投梅庭（Plum Garden）</h2>
+                <p>北投梅庭春櫻盛開，粉紅花海映襯日式建築與翠綠庭園，藍天下展現北投自然與人文的完美融合。</p>
                 <a href="#" class="read-more">閱讀更多</a>
             </div>
         </div>
-
-
-            <!-- left & right  -->
-        <div class="rightimg">
-            <div class="titles-l">
-                <h2>心靜自涼</h2>
-                <p>在新北投，融入大自然的懷抱，感受泉水的溫暖，山林的綠意，讓每一刻都充滿寧靜與平和。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <img src="./img/13.jpg" alt="">
-        </div>
-
-        <div class="leftimg">
-            <div class="titles-r">
-                <h2>自然而然</h2>
-                <p>新北投的自然景觀迷人，山與泉相依，空氣清新，每一步都讓人感受到大自然的饋贈與療癒力量。</p>
-                <a href="" class="read-more"></a>
-            </div>
-            <img src="./img/14.jpg" alt="">
-        </div>
-
-
-            <!-- multi-banners -->
-        <div class="multi-banners">
-            <h2>更多大自然</h2>
-            <div class="multi-banners-out">
-                <div class="multi-banners-in">
-                    <img src="./img/12.jpg" alt="">
-                    <h3>得天獨厚</h3>
-                    <p>新北投擁有得天獨厚的自然景觀，與溫泉交織成和諧的畫面，無論是山景還是水景，無不讓人心曠神怡</p>
-                </div>
-                <div class="multi-banners-in">
-                    <img src="./img/19.jpg" alt="">
-                    <h3>白雲翠山</h3>
-                    <p>新北投的自然景色令人心馳神往，無論是藍天白雲還是翠綠山巒，都是心靈放鬆的完美背景。</p>
-                </div>
-                <div class="multi-banners-in">
-                    <img src="./img/15.jpg" alt="">
-                    <h3>心靈療癒</h3>
-                    <p>新北投是大自然的恩賜，溫泉與山林交織，寧靜的環境讓人忘卻煩憂，享受純粹的心靈療癒。</p>
-                </div>
-            </div>
-        </div>      
 
     </main>
+
     <!-- footer -->
     <footer>
         <ul class="out-list">
             <li>
-                <p>探索新北投</p>
+                <h4>探索新北投</h4>
                 <ul class="in-list">
                     <li><a href="">即時影像</a></li>
                     <li><a href="">你好，新北投</a></li>
                     <li><a href="">城鎮故事</a></li>
                 </ul>
             </li>
-            <li><p>活動新訊</p>
+            <li>
+                <h4>活動新訊</h4>
                 <ul class="in-list">
                     <li><a href="">最新消息</a></li>
                     <li><a href="">活動展演</a></li>
                     <li><a href="">熱門話題</a></li>
                 </ul></li>
-            <li><p>旅遊指南</p>
+            <li>
+                <h4>旅遊指南</h4>
                 <ul class="in-list">
                     <li><a href="">必吃美食</a></li>
                     <li><a href="">必遊景點</a></li>
                     <li><a href="">景點地圖</a></li>
                 </ul></li>
-            <li><p>我們的社群</p>
+            <li>
+                <h4>我們的社群</h4>
                 <ul class="in-list">
-                    <li><a href="#">FB:newbetiou</a><img src="./img/fb.png" alt=""></li>
-                    <li><a href="#">IG:@newbetiou</a><img src="./img/instagram_2111463.png" alt=""></li>
-                    <li><a href="#">X:@newbetiou</a><img src="./img/X.png" alt=""></li>
-                </ul></li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                             NewBeitiou
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-line"></i>
+                             ID:newbeitiou006
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                             @newbeitiou
+                        </a>
+                        
+                    </li>
+                </ul>
+            </li>
         </ul>
         <p class="copyright">Copy rights here</p>
     </footer>
 
-    <a href="#top" class="backtotop">top</a>
+    <!-- button back-to-top -->
+    <a href="#top" class="back-to-top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </a>
 
+<!-- font awsome -->
+<script src="https://kit.fontawesome.com/2474fb8bba.js" crossorigin="anonymous"></script>
+<!-- JS & JQuery -->
 </body>
 </html>

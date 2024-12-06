@@ -1,0 +1,68 @@
+.three-buttons{
+    width: 100%;
+    padding: 0 10vw;
+    box-sizing: border-box;
+
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.buttons-titles{
+    width: 70%;
+    background-color: #4ED7AE;
+    padding: 80px;
+    box-sizing: border-box;
+    border-radius: 7px 0 0 7px;
+}
+
+.buttons-titles h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.buttons-titles p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.buttons-area{
+    width: 30%;
+    border-radius: 0 7px 7px 0;
+
+    background-image: url('../img/3buttons_area_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.buttons-area ul{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.buttons-area li{
+    width: 100%;
+    background-color: #4ED7AE;
+    font-size: 20px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    margin-right: auto;
+    border-radius: 0 7px 7px 0;
+    border-left: 1px solid #565A6E;
+}
+
+.buttons-area li:first-child{
+    border-left: 0;
+    box-shadow: 0px 0px 8px 4px #FFF;
+}
+
+.buttons-area li:hover{
+    cursor: pointer;
+    color: #E69120;
+}
+

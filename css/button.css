@@ -1,36 +1,55 @@
-/* ----------button back-to-top ----------*/
-.back-to-top{
-    width: 30px;
-    height: 30px;
-    color: #E69120;
-    border: 2.5px solid #E69120;
-    border-radius: 50%;
+@import url('variables.css');
 
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    font-weight:bold;
-    
+/* ----------button back-to-top ----------*/
+.back-to-top{    
     position: fixed;
     bottom: 20px;
     right: 0;
     z-index: 1;
+    cursor: pointer;
+}
 
+.fa-circle-arrow-up{
+    font-size: 4rem;
+    color: #E69120;
 }
 
 /* -----------button of read-more---------- */
 .read-more {
     display: block;
-    line-height: 40px;
-    width: 108px;
-    color: #FFF;
-    font-size: 20px;
+    width: 144px;
+    line-height: 32px;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: #000;
+    font-size: 1.8rem;
     text-decoration: none;
     text-align: center;
-    background: var(--main-steam, #E69120);
     border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid white;
 }
 
-.read-more:hover {
-    background-color: var(--alternative-, #93DBC8);
+.read-more::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:var(--accent-color);
+    z-index: 0;
+}
+.read-more:hover::before{
+    border-radius: 7px;
+    width: 100%;
+    z-index: -1;
+    transition: .3s ease-in-out;
+}
+
+.read-more:hover{
+    color: white;
+    z-index: 1;
 }

@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/2474fb8bba.js" crossorigin="anonymous"></script>
     <title>首頁</title>
 
 </head>
@@ -21,19 +20,24 @@
         
          <!-- logo -->
          <div class="logo">
-            <a href="index.html"><img id="logo-header" src="./img/logo 2 蒸氣.png" alt=""></a>
+            <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
         </div>
+
+         <!-- 漢堡按鈕 -->
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
             <!-- navigation list-->
-        <div class="nav-fav">
+        <div class="nav">
             <ul class="navigation">
-                <li><a href="./hotspring.html" class="page-switcher">溫泉</a></li>
-                <li><a href="./history.html" class="page-switcher">歷史</a></li>
-                <li><a href="./buildings.html" class="page-switcher">建築</a></li>
-                <li><a href="./nature.html" class="page-switcher">自然</a></li>
+                <li><a href="hotspring.html" class="page-switcher" id="hotspring">溫泉</a></li>
+                <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
+                <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
+                <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
             </ul>
-            <a href="myfav.html"><i class="fa-solid fa-heart"></i></a>
-            <a href="myfav.html"><i class="fa-solid fa-user"></i></a>
-            
         </div>
         
         
@@ -43,113 +47,227 @@
 
         <!-- top banner -->
         <div class="top-banner" id="top">
-            <h1>放鬆 IN 新北投</h1>
+            <h1>放鬆<br>
+                 IN <br>
+                <span>New Beitou</span> </h1>
             <p></p>
         </div>
 
         <!-- top titles -->
-        <h1 class="opening">歡迎來到新北投</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quis deserunt perspiciatis reprehenderit magni? Quaerat?</p>
-        <a href="#" class="jump read-more">一鍵放鬆去!</a>
+         <div class="top-titles">
+            <h1 class="opening">歡迎來到New Beitou</h1>
+            <p>New Beitou(中文 : 新北投)，這是一個讓人放鬆的小鎮，有溫泉、公園、按摩、古蹟...等，很多東西等著你去探索，跟著我們一起逃離喧囂吧!</p>
+            <a href="#" class="jump read-more">一鍵放鬆去!</a>
+         </div>
+        
+        
 
         <!-- activity news -->
         <div class="avtivities">
-            <h2>活動消息</h2>
-            <div class="avtivities-banners">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>次標題</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </a>                        
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>次標題</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>次標題</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="left">
-                <i class="fa-solid fa-caret-left"></i>
-            </div>
-            <div class="right">
-                <i class="fa-solid fa-caret-right"></i>
-            </div>
-        </div>
+            <h2>活動消息</h2>            
+            <ul class="avtivities-banners">
+                <li>
+                    <a href="#">
+                        <img src="./img/activity_1-1.png" alt="" loading="lazy">
+                        <h3>溫泉祭</h3>
+                        <p>每年秋去冬來，一定會舉辦的祭典!聽說這次有點不一樣...</p>
+                    </a>                        
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/activity_1-2.png" alt="" loading="lazy">
+                        <h3>女巫季</h3>
+                        <p>"女巫"一詞來自先民對蒸氣升騰的想像，女巫季是每四年...</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/activity_1-3.png" alt="" loading="lazy">
+                        <h3>小型音樂會</h3>
+                        <p>今年在北投公園的音樂廣場，邀您一起來聽音樂，享受...</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/activity_1-4.png" alt="">
+                        <h3>復活節與溫泉蛋</h3>
+                        <p>結合復活節與溫泉蛋，將找到的溫泉蛋交給店家...</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- 下方切換紐 -->
+            <ul class="activity-switcher">
+                <li data-slide="0"></li>
+                <li data-slide="1"></li>
+                <li data-slide="2"></li>
+                <li data-slide="3"></li>
+                <li data-slide="4"></li>
+                <li data-slide="5"></li>
+            </ul>
+        </div> 
 
         <!-- four icons -->
-        <div class="four-icons">
-            <div class="four-icons-titles">
-                <h2>四大特色</h2>
-                <p class="four-icons-p">一個有 :溫泉療癒、歷史傳承、建築美學、自然風光交織的心靈休憩地。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <ul class="four-icons-content">
-                <li class="four-icons-in"><img src="./img/hot-spring_13329772.png" alt="">
+        <div class="four-icons">    
+            <ul class="four-icons-titles" id="scroll-show-container">
+                <li id="scroll-show-0">
+                    <h2>四大特色</h2>
+                    <p>新北投，一座溫泉療癒、歷史傳承、建築美學、自然風光交織的心靈休憩地。</p>
+                    <a href="#" class="read-more">閱讀更多</a>
+                </li>
+                <!-- <li id="scroll-show-1">
                     <h3>溫泉</h3>
                     <p>溫泉水質多樣，無論舒緩疲勞或放鬆身心，都是療癒的最佳選擇！</p>
                 </li>
-                <li class="four-icons-in"><img src="./img/parchment_2682065.png" alt="">
+                <li id="scroll-show-2">
                     <h3>歷史</h3>
                     <p>有百年溫泉文化，從溫泉博物館到地熱谷，處處都是歷史的見證！</p>
                 </li>
-                <li class="four-icons-in"><img src="./img/temple_1664985.png" alt="">
+                <li id="scroll-show-3">
                     <h3>建築</h3>
                     <p>融合日式溫泉館與在地特色建築，展現歷史與現代美學的完美交融。</p>
                 </li>
-                <li class="four-icons-in"><img src="./img/nature_2823530.png" alt="">
+                <li id="scroll-show-4">
                     <h3>自然</h3>
                     <p>擁有溫泉溪、地熱谷等自然奇景，讓人親近大自然，感受純淨與寧靜。</p>
+                </li> -->
+            </ul>
+
+            <ul class="four-icons-content">
+                <li class="four-icons-in"><img src="./img/hot-spring_13329772.png" alt="">
+                    <h3>溫泉</h3>
+                    
+                </li>
+                <li class="four-icons-in"><img src="./img/parchment_2682065.png" alt="">
+                    <h3>歷史</h3>
+                    
+                </li>
+                <li class="four-icons-in"><img src="./img/temple_1664985.png" alt="">
+                    <h3>建築</h3>
+                    
+                </li>
+                <li class="four-icons-in"><img src="./img/nature_2823530.png" alt="">
+                    <h3>自然</h3>
+                    
                 </li>
             </ul>
         </div>
 
         <!-- map -->
-        <div class="map">
+        <div class="map" id="map">
             <h2>交通地圖</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d115583.39189036808!2d121.46153800942696!3d25.136333317794488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5paw5YyX5oqV!5e0!3m2!1szh-TW!2stw!4v1732804072484!5m2!1szh-TW!2stw" width="1152" height="418" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
         <!-- recommonds -->
         <div class="recommonds">
             <div class="title-search">
                 <h2>熱門泡湯飯店推薦</h2>
-                <div class="search">
-                    <input type="search">
+                <div class="search-bar">
+                    <input type="search" class="search">
                     <i class="fa-solid fa-magnifying-glass-location fa-bounce"></i>
                 </div>
             </div>
+            <ul class="rec-cards">
+                <li>
+                    <img src="" alt="" loading="lazy">
+                    <div class="card-info">
+                        <h3>新北投冷海大飯店</h3>
+                        <!-- star -->
+                        <p class="star">3.5 <span><i class="fa-solid fa-star"></i></span> (132)評價數</p>
+                        <!-- price -->
+                        <p class="price"><span>NT$2900</span>  NT$1800</p>
+
+                    </div>
+                    <div class="card-buttons">
+                        <i class="fa-solid fa-heart"></i>
+                        <a href="#" class="read-more">我要訂房</a>
+                    </div>        
+                </li>
+                <!-- li再+2 -->
+                <li>
+                    <img src="" alt="" loading="lazy">
+                    <div class="card-info">
+                        <h3>新北投夫人酒店</h3>
+                        <!-- star -->
+                        <p class="star">4.5 <span><i class="fa-solid fa-star"></i></span> (1320)評價數</p>
+                        <!-- price -->
+                        <p class="price"><span>NT$2900</span>  NT$1800</p>
+
+                    </div>
+                    <div class="card-buttons">
+                        <i class="fa-solid fa-heart"></i>
+                        <a href="#" class="read-more">我要訂房</a>
+                    </div>        
+                </li>
+                <li>
+                    <img src="" alt="" loading="lazy">
+                    <div class="card-info">
+                        <h3>水噹噹溫泉會館</h3>
+                        <!-- star -->
+                        <p class="star">4 <span><i class="fa-solid fa-star"></i></span> (500)評價數</p>
+                        <!-- price -->
+                        <p class="price"><span>NT$2900</span>  NT$1800</p>
+
+                    </div>
+                    <div class="card-buttons">
+                        <i class="fa-solid fa-heart"></i>
+                        <a href="#" class="read-more">我要訂房</a>
+                    </div>        
+                </li>
+            </ul>
+
+            <a href="#" class="read-more">查看更多...</a>
+
         </div>
 
         <!-- FAQ -->
         <div class="faq">
             <h2>FAQ 常見問題</h2>
             <ul>
-                <li>Q : 溫泉是什麼?
-                    <i class="fa-solid fa-circle-chevron-down"></i>
+                <li>
+                    <!-- quextion, dropdown -->
+                    <div class="question">
+                        <p>Q : 新北投有什麼必訪的景點？</p>
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </div>
+                    <!-- answer -->
+                    <div class="answer" style="display: none;">
+                        <p>A: 地熱谷、北投溫泉博物館與北投公園都是不可錯過的景點，您還可以探索當地特色溫泉飯店與步道。</p>
+                    </div>
                 </li>
-                <li>Q : 交通怎麼去
-                    <i class="fa-solid fa-circle-chevron-down"></i>
+                <li>
+                    <!-- quextion, dropdown -->
+                    <div class="question">
+                        <p>Q : 地熱谷的參觀時間與費用是多少？</p>                        
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </div>
+                    <!-- answer -->
+                    <div class="answer" style="display: none;">
+                        <p>A: 地熱谷開放時間為上午9點至下午5點，免費參觀，但請注意每週一休館。</p>
+                    </div>
                 </li>
-                <li>Q : 溫泉美食
-                    <i class="fa-solid fa-circle-chevron-down"></i>
+                <li>
+                    <!-- quextion, dropdown -->
+                    <div class="question">
+                        <p>Q : 北投有提供哪些溫泉體驗？</p>
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </div>
+                    <!-- answer -->
+                    <div class="answer" style="display: none;">
+                        <p>A: 新北投提供公共湯屋、溫泉飯店以及露天溫泉等多樣選擇，適合個人或家人一同享受。</p>
+                    </div>
                 </li>
-                <li>Q : 只想泡湯
-                    <i class="fa-solid fa-circle-chevron-down"></i>
+                <li>
+                    <!-- quextion, dropdown -->
+                    <div class="question">
+                        <p>Q : 如何前往新北投？</p>
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </div>
+                    <!-- answer -->
+                    <div class="answer" style="display: none;">
+                        <p>A: 可搭乘台北捷運淡水信義線至北投站，再轉乘新北投支線，約5分鐘即可抵達新北投站。(地圖 : <a href="#map">點我前往</a> )</p>
+                    </div>
                 </li>
-                <!-- 反白版本的箭頭向下
-                <i class="fa-regular fa-circle-chevron-down"></i>
-                  -->
             </ul>
         </div>
 
@@ -160,37 +278,65 @@
     <footer>
         <ul class="out-list">
             <li>
-                <p>探索新北投</p>
+                <h4>探索新北投</h4>
                 <ul class="in-list">
                     <li><a href="">即時影像</a></li>
                     <li><a href="">你好，新北投</a></li>
                     <li><a href="">城鎮故事</a></li>
                 </ul>
             </li>
-            <li><p>活動新訊</p>
+            <li>
+                <h4>活動新訊</h4>
                 <ul class="in-list">
                     <li><a href="">最新消息</a></li>
                     <li><a href="">活動展演</a></li>
                     <li><a href="">熱門話題</a></li>
                 </ul></li>
-            <li><p>旅遊指南</p>
+            <li>
+                <h4>旅遊指南</h4>
                 <ul class="in-list">
                     <li><a href="">必吃美食</a></li>
                     <li><a href="">必遊景點</a></li>
                     <li><a href="">景點地圖</a></li>
                 </ul></li>
-            <li><p>我們的社群</p>
+            <li>
+                <h4>我們的社群</h4>
                 <ul class="in-list">
-                    <li><a href="#">FB:newbetiou</a><img src="./img/fb.png" alt=""></li>
-                    <li><a href="#">IG:@newbetiou</a><img src="./img/instagram_2111463.png" alt=""></li>
-                    <li><a href="#">X:@newbetiou</a><img src="./img/X.png" alt=""></li>
-                </ul></li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                             NewBeitiou
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-line"></i>
+                             ID:newbeitiou006
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                             @newbeitiou
+                        </a>
+                        
+                    </li>
+                </ul>
+            </li>
         </ul>
         <p class="copyright">Copy rights here</p>
     </footer>
 
-    <!-- button : back-to-top -->
-    <a href="#top" class="back-to-top">top</a>
+    <!-- button back-to-top -->
+    <a href="#top" class="back-to-top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </a>
 
+<!-- font awsome -->
+<script src="https://kit.fontawesome.com/2474fb8bba.js" crossorigin="anonymous"></script>
+<!-- JS & JQuery -->
+ <script src="js/index.js"></script>
 </body>
 </html>

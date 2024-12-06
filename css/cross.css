@@ -2,12 +2,79 @@
 /* use grid, 
     rows:a、b~
     columns:1、2~ */
-.cross{}
+.cross{
+    width: 100%;
+    padding: 0 10vw;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "a-1 a-2"
+    "b-1 b-2"
+    "c-1 c-2"
+    ;
+    gap: 1vw;
 
-.a-1{}
+    overflow: hidden;
+}
 
-.a-2{}
+.cross h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
-.b-1{}
+.cross p{
+    font-size: 16px;
+}
 
-.b-2{}
+.cross img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.box{
+    width: 100%;
+    background-color: #FFFDD0;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.box a{
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.a-1{
+    grid-area: a-1;
+}
+
+.a-2{
+    grid-area: a-2;
+}
+
+.b-1{
+    grid-area: b-1;
+}
+
+.b-2{
+    grid-area: b-2;
+}
+
+.c-1{
+    grid-area: c-1;
+
+}
+
+.c-2{
+    grid-area: c-2;
+
+}
+
+/* RWD的時候，摺疊成 1 column */

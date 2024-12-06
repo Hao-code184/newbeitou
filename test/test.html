@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多按鈕切換文字</title>
+  <style>
+    #text {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="text">請點擊按鈕切換文字。</div>
+  <button id="button1">顯示文字 1</button>
+  <button id="button2">顯示文字 2</button>
+  <button id="button3">顯示文字 3</button>
+
+  <script>
+    const textElement = document.getElementById('text');
+
+    // 設定文字內容
+    const text1 = "這是第一段文字。";
+    const text2 = "這是第二段文字。";
+    const text3 = "這是第三段文字。";
+
+    // 綁定按鈕事件
+    document.getElementById('button1').addEventListener('click', () => {
+      textElement.textContent = text1;
+    });
+
+    document.getElementById('button2').addEventListener('click', () => {
+      textElement.textContent = text2;
+    });
+
+    document.getElementById('button3').addEventListener('click', () => {
+      textElement.textContent = text3;
+    });
+  </script>
+</body>
+</html>

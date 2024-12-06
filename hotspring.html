@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/hotspring.css">
+    <!-- css links -->
+    <link rel="stylesheet" href="css/hotspring.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>溫泉</title>
 
 </head>
@@ -16,15 +20,15 @@
         
         <!-- logo -->
         <div class="logo">
-           <a href="index.html"><img id="logo-header" src="./img/logo 2 蒸氣.png" alt=""></a>
+           <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
        </div>
            <!-- navigation list-->
        <div class="nav-fav">
            <ul class="navigation">
-               <li><a href="./hotspring.html" class="page-switcher">溫泉</a></li>
-               <li><a href="./history.html" class="page-switcher">歷史</a></li>
-               <li><a href="./buildings.html" class="page-switcher">建築</a></li>
-               <li><a href="./nature.html" class="page-switcher">自然</a></li>
+            <li><a href="hotspring.html" class="page-switcher" id="hotspring">溫泉</a></li>
+            <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
+            <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
+            <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
            </ul>
            <a href="myfav.html"><i class="fa-solid fa-heart"></i></a>
            <a href="myfav.html"><i class="fa-solid fa-user"></i></a>
@@ -35,110 +39,96 @@
    </header>
 
     <main>
+
         <!-- top banner -->
         <div class="top-banner" id="top">
-            <h1>放鬆 IN 新北投</h1>
-            <p></p>
+            <h1>溫泉之鄉</h1>
+            <p>沉浸溫泉的靜謐，感受新北投的魅力</p>
         </div>
+
+        <!-- inpage nav -->
+        <ul class="inpage-nav">
+            <li><a href="#three-banners">溫泉分類</a></li>
+            <li><a href="#cross">泡湯推薦</a></li>
+            <li><a href="#random">三大湯池</a></li>
+        </ul>
 
         <!-- 3 banners -->
-        <div class="multi-banners">
-            <h2>三種溫泉水</h2>
-            <div class="multi-banners-out">
-                <div class="multi-banners-in">
-                    <img src="./img/12.jpg" alt="">
-                    <h3>硫磺泉</h3>
-                    <p>硫磺泉，水質柔滑且富含礦物質，具舒緩疲勞、促進循環等功效，是放鬆身心的首選溫泉。</p>
-                </div>
-                <div class="multi-banners-in">
-                    <img src="./img/14.jpg" alt="">
-                    <h3>清泉</h3>
-                    <p>清泉，水質清澈透明，溫和不刺激，適合敏感肌膚，帶來輕盈舒適的泡湯體驗。</p>
-                </div>
-                <div class="multi-banners-in">
-                    <img src="./img/16.jpg" alt="">
-                    <h3>瀧乃湯</h3>
-                    <p>水呈現淡白色，水質清且滑，對皮膚有美白作用</p>
-                </div>
-            </div>
-        </div>
+        <div class="three-banners" id="three-banners">
+            <h2>新北投，有三種溫泉水</h2>
+            <ul class="three-banners-out">
+                <li class="three-banners">
+                    <img src="img/3_banners_1.png" alt="">
+                    <h3>青磺泉</h3>
+                    <p><span>特徵</span>： 水質透明微帶淡藍色，硫磺味較淡，溫度通常高於白磺泉，約 45°C 至 75°C。</p>
+                    </br>
+                    <p><span>功效</span>： 富含放射性元素（如氡），據說能幫助舒緩肌肉與關節不適，深受遊客喜愛。</p>
+                </li>
+                <li class="three-banners">
+                    <img src="img/3_banners_2.png" alt="">
+                    <h3>鐵硫泉</h3>
+                    <p><span>特徵</span>： 呈淡黃色或微紅色，水中富含鐵質與硫磺成分，水溫一般在 40°C 至 60°C。</p>
+                    <br>
+                    <p><span>功效</span>： 據說對風濕與疲勞恢復有益，同時有助於促進新陳代謝。</p>
+                </li>
+                <li class="three-banners">
+                    <img src="img/3_banners_3.png" alt="">
+                    <h3>白磺泉</h3>
+                    <p><span>特徵</span>： 水質呈乳白色，帶有硫磺味，溫度約在 45°C 至 58°C。</p>
+                    <br>
+                    <p><span>功效</span>： 據說對皮膚有護理效果，可促進血液循環，幫助放鬆身心。</p>
+                </li>
+            </ul>
+        </div>      
 
-        <!-- random layout -->
-        <div class="random">
-            <img src="./img/18.jpg" alt="" class="random-img-first">
-            <img src="./img/19.jpg" alt="" class="random-img-second">
-            <img src="./img/22.jpg" alt="" class="random-img-third">
-            <div class="random-tit-first">
-                <h2>壓力瑪斯</h2>
-                <p>新北投溫泉，與大自然親密接觸，享受天然泉水的舒適與放鬆，是放慢步伐、釋放壓力的最佳選擇。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <div class="random-tit-second">
-                <p>在新北投，品味傳統溫泉文化，感受熱泉的療癒力量，讓身心徹底放鬆，重新充電迎接新挑戰。</p>
-            </div>
-            <div class="random-tit-third">
-                <h2>在溫泉區</h2>
-                <p>沉浸在美麗山水間，享受溫泉帶來的無限舒適與寧靜，放鬆每一寸肌膚，重拾生活的平衡。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-        </div>
-
-        <!-- grid: img & content -->
+        <!-- (cross)grid: img & content -->
          <!-- use grid, 
           rows:a、b~
           columns:1、2~
           -->
-        <div class="cross">
-            <div class="a-1">
-                <h2>次標題</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, minima.</p>
+        <div class="cross" id="cross">
+            <div class="box a-1">
+                <h2>北投文物館</h2>
+                <p>北投文物館附設的湯屋以白磺泉為特色，結合傳統日式建築與濃厚的歷史氛圍，是享受白磺泉的理想地點。</p>
+                <a href="#" class="read-more">閱讀更多</a>
             </div>
-            <img src="" alt="" class="a-2">
-            <div class="b-1">
-                <h2>次標題</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, minima.</p>
+            <img src="img/hot-spring_rec_1.png" alt="" class="a-2">
+            <div class="box b-2">
+                <h2>大天酒店</h2>
+                <p>大天酒店提供優質的青磺泉泡湯體驗，設有高端私人湯池，環境幽靜，適合尋求高品質溫泉享受的旅客。</p>
+                <a href="#" class="read-more">閱讀更多</a>
             </div>
-            <img src="" alt="" class="b-2">
+            <img src="img/hot-spring_rec_2.png" alt="" class="b-1">
+            <div class="box c-1">
+                <h2>皇家池溫泉御膳館</h2>
+                <p>這裡以鐵硫泉聞名，提供露天池與個人湯屋，還有中藥加溫泉的特色療法，是感受鐵硫泉特性的好地方。</p>
+                <a href="#" class="read-more">閱讀更多</a>
+            </div>
+            <img src="img/hot-spring_rec_3.png" alt="" class="c-2">
         </div>
         
-
-
-        <!-- activity news -->
-        <div class="avtivities">
-            <h2>活動消息</h2>
-            <div class="avtivities-banners">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>次標題</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </a>                        
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>次標題</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="" alt="">
-                            <h3>次標題</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </a>
-                    </li>
-                </ul>
+        <!-- staggered -->
+        <div class="random" id="random">
+            <img src="img/bg_straggered_1.png" alt="" class="mid-base">
+            <img src="img/hs_hot_spot_1.png" alt="" class="random-img-first">
+            <img src="img/hs_hot_spot_2.png" alt="" class="random-img-second">
+            <img src="img/hs_hot_spot_3.png" alt="" class="random-img-third">
+            <div class="random-tit-first">
+                <h2>青石湯屋</h2>
+                <p>青石湯屋以古早石材打造，結合日式庭院景觀，提供寧靜舒適的私人空間，感受百年地熱文化的溫暖。</p>
+                <a href="#" class="read-more">閱讀更多</a>
             </div>
-            <div class="left">
-                <i class="fa-solid fa-caret-left"></i>
+            <div class="random-tit-second">
+                <h2>雲霧湯池</h2>
+                <p>位於山腰的雲霧湯池，溫泉水散發天然硫磺香，蒸氣如雲霧，晨曦日出間洗滌心靈的疲憊。</p>
+                <a href="#" class="read-more">閱讀更多</a>
             </div>
-            <div class="right">
-                <i class="fa-solid fa-caret-right"></i>
+            <div class="random-tit-third">
+                <h2>和風泉亭</h2>
+                <p>和風泉庭以傳統日式建築融入現代溫泉技術，四季皆美，親子共享，呈現純粹的療癒時光與自然之美。</p>
+                <a href="#" class="read-more">閱讀更多</a>
             </div>
-        </div>       
-
+        </div>
 
     </main>
 
@@ -146,36 +136,64 @@
     <footer>
         <ul class="out-list">
             <li>
-                <p>探索新北投</p>
+                <h4>探索新北投</h4>
                 <ul class="in-list">
                     <li><a href="">即時影像</a></li>
                     <li><a href="">你好，新北投</a></li>
                     <li><a href="">城鎮故事</a></li>
                 </ul>
             </li>
-            <li><p>活動新訊</p>
+            <li>
+                <h4>活動新訊</h4>
                 <ul class="in-list">
                     <li><a href="">最新消息</a></li>
                     <li><a href="">活動展演</a></li>
                     <li><a href="">熱門話題</a></li>
                 </ul></li>
-            <li><p>旅遊指南</p>
+            <li>
+                <h4>旅遊指南</h4>
                 <ul class="in-list">
                     <li><a href="">必吃美食</a></li>
                     <li><a href="">必遊景點</a></li>
                     <li><a href="">景點地圖</a></li>
                 </ul></li>
-            <li><p>我們的社群</p>
+            <li>
+                <h4>我們的社群</h4>
                 <ul class="in-list">
-                    <li><a href="#">FB:newbetiou</a><img src="./img/fb.png" alt=""></li>
-                    <li><a href="#">IG:@newbetiou</a><img src="./img/instagram_2111463.png" alt=""></li>
-                    <li><a href="#">X:@newbetiou</a><img src="./img/X.png" alt=""></li>
-                </ul></li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                             NewBeitiou
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-line"></i>
+                             ID:newbeitiou006
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                             @newbeitiou
+                        </a>
+                        
+                    </li>
+                </ul>
+            </li>
         </ul>
         <p class="copyright">Copy rights here</p>
     </footer>
 
-    <a href="#top" class="backtotop">top</a>
+    <!-- button back-to-top -->
+    <a href="#top" class="back-to-top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </a>
 
+<!-- font awsome -->
+<script src="https://kit.fontawesome.com/2474fb8bba.js" crossorigin="anonymous"></script>
+<!-- JS & JQuery -->
 </body>
 </html>

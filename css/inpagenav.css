@@ -1,0 +1,38 @@
+.inpage-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.inpage-nav li{
+    display: flex;
+    width: 100%;    
+}
+
+.inpage-nav li a{
+    width: 100%;
+    padding: 0 10vw;
+    font-size: 24px;
+    line-height: 60px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-top: 0;
+    background-color: #fff;
+}
+
+.inpage-nav li a:hover{
+    color: #E69120;
+    border: 1px solid #E69120;
+    border-top: 0;
+    transition: .1s;
+}
+
+.inpage-nav li a:active{
+    font-weight: bold;
+}

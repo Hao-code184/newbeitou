@@ -1,6 +1,9 @@
 @import url('reset.css');
+@import url('structure.css');
 @import url('header.css');
 @import url('topbanner.css');
+@import url('inpagenav.css');
+@import url('cross.css');
 @import url('staggered.css');
 @import url('activities.css');
 @import url('footer.css');
@@ -14,74 +17,119 @@ body{}
 main{}
 
 /* header */
-.navigation li:first-child{
+#hotspring{
     border-bottom: 4px solid #E69120;
+    color: #E69120;
+    font-weight: bold;
 }
+
+/* #hotspring::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 10px;
+    background-color: darkslategray;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+} */
 
 /* top banner */
 
+.top-banner{
+    background-image: url('../img/topbanner_2png.png');
+}
+
 /* 3 banners */
-.multi-banners{
+
+.three-banners{
     width: 100%;
-    padding-top: 85px;
+    padding: 0 10vw;
     box-sizing: border-box;
+    margin-bottom: 100px;
 
     overflow: hidden;
-
-   background-image: url('../img/9.jpg');
-   background-size: cover;
-
 }
 
-.multi-banners h2{
+.three-banners:hover{
+    transform: translate(0 -10px);
+    transition: .2s;
+}
+
+.three-banners h2{
     color: #000;
-    font-size: 32px;
-    margin-bottom: 51px;
-    margin-left: 70px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
-.multi-banners-out{
-    margin: 0 auto 175px;
-    width: 1062px;
-    display: flex;
-    justify-content: space-between;
+.three-banners-out{
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;  /*斷點時flex-wrap:wrap*/
+    gap: 40px;  
 }
 
-.multi-banners-in{
+.three-banners-out li{
     display: flex;
-    width: 284px;
-    padding-bottom: 41px;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
     box-sizing: border-box;
     flex-direction: column;
     align-items: center;
-    gap: 39px;
+    background-color:#FFFDD0;
+    border-radius: 7px;
+    box-shadow: 0px 4px 4px 0px #E69120;
+    color: #000;
+    text-align: center;
 
-    background: var(--main-, #FFFDD0);
+    overflow: hidden;
 }
 
-.multi-banners-in img{
+.three-banners img{
     display: block;
     width: 100%;
-    height: 184px;
-
-    background-color: #ccc;
+    margin-bottom: 20px;
+    border-radius: 7px;
 }
 
-.multi-banners-in h3{
+.three-banners h3{
     color: #000;
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.multi-banners-in p{
+.three-banners p{
+    text-align: left;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
+    padding: 0 2em;
 }
 
-/* grid: img & content */
+.three-banners span{
+    font-weight: bold;
+}
+
+/* (cross)grid: img & content */
  
 /* staggered */
+.random-tit-second h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 
-/* activities news */
+.random-tit-second p{
+    margin-bottom: 20px;
+}
+
+.random-img-third{
+    width: 480px;
+}
 
 /* footer */
 

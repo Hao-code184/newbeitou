@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css links -->
     <link rel="stylesheet" href="css/history.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>歷史</title>
 
 </head>
@@ -16,15 +20,15 @@
         
         <!-- logo -->
         <div class="logo">
-           <a href="index.html"><img id="logo-header" src="./img/logo 2 蒸氣.png" alt=""></a>
+           <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
        </div>
            <!-- navigation list-->
        <div class="nav-fav">
            <ul class="navigation">
-               <li><a href="./hotspring.html" class="page-switcher">溫泉</a></li>
-               <li><a href="./history.html" class="page-switcher">歷史</a></li>
-               <li><a href="./buildings.html" class="page-switcher">建築</a></li>
-               <li><a href="./nature.html" class="page-switcher">自然</a></li>
+            <li><a href="hotspring.html" class="page-switcher" id="hotspring">溫泉</a></li>
+            <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
+            <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
+            <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
            </ul>
            <a href="myfav.html"><i class="fa-solid fa-heart"></i></a>
            <a href="myfav.html"><i class="fa-solid fa-user"></i></a>
@@ -34,139 +38,167 @@
        
    </header>
 
-
-    <!--top banner  -->
     <main>
-        <div class="topimg" id="top"></div>
-        
-        
-            <!-- img-back -->
-        <div class="img-back">
-            <div class="titles-front">
-                <h2>回到日治</h2>
-                <p>探索新北投的歷史，回溯到百年前的日治時代，這片土地見證了台灣溫泉文化的演變與豐富底蘊。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <img src="./img/27.jpg" alt="">
+
+        <!-- top banner -->
+        <div class="top-banner" id="top">
+            <h1>新北投歷史</h1>
+            <p>讓我們一起探索新北投的百年歷史</p>
         </div>
 
-            <!-- timeline -->
-        <div class="timeline">
-            <!-- <img src="" alt="" class="line"> -->
-            <img src="./img/16.jpg" alt="" class="timeline-img-first">
-            <img src="./img/24.jpg" alt="" class="timeline-img-second">
-            <img src="./img/27.jpg" alt="" class="timeline-img-third">
-            <div class="timeline-tit-first">
-                <h2>悠久歷史</h2>
-                <p>新北投溫泉歷史悠久，從清朝至今，見證了台灣的發展與變遷，是歷史與自然的完美交融。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <div class="timeline-tit-second">
-                <h2>百年文化</h2>
-                <p>擁有百年歷史，溫泉文化自日治時期便根深蒂固，是台灣最具歷史韻味的溫泉區之一，見證時光流轉。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-            <div class="timeline-tit-third">
-                <h2>時光隧道</h2>
-                <p>走進新北投，穿越時光隧道，感受日治時期的歷史痕跡與溫泉文化的融合，體驗台灣獨特的歷史風情。</p>
-                <a href="#" class="read-more">閱讀更多</a>
-            </div>
-        </div>
+        <!-- inpage nav -->
+        <ul class="inpage-nav">
+            <li><a href="#timeline">時間線</a></li>
+            <li><a href="#random">溫泉開發</a></li>
+            <li><a href="#two-banners">地名差異</a></li>
+        </ul>
 
-
-            <!-- left & right  -->
-        <div class="rightimg">
-            <div class="titles-l">
-                <h2>古老浴湯</h2>
-                <p>歷史與現代交織，古老溫泉浴場和日治時期的建築，讓人感受到時間的流動與文化的傳承。</p>
-                <a href="#" class="read-more">閱讀更多</a>
+        <!-- timeline -->
+        <div class="timeline" id="timeline">
+            <!-- line -->
+            <div class="line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="432" viewBox="0 0 32 432" fill="none">
+                    <path d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM13 16V20H19V16H13ZM13 28L13 36H19V28H13ZM13 44V52H19L19 44H13ZM13 60V68H19V60H13ZM13 76V84H19V76H13ZM13 92L13 100H19L19 92H13ZM13 108L13 116H19V108H13ZM13 124V132H19V124H13ZM13 140V148H19V140H13ZM13 156V164H19V156H13ZM13 172V180H19V172H13ZM13 188V196H19V188H13ZM13 204L13 212H19V204H13ZM13 220V228H19V220H13ZM13 236V244H19V236H13ZM13 252V260H19V252H13ZM13 268V276H19V268H13ZM13 284L13 292H19V284H13ZM13 300V308H19V300H13ZM13 316V324H19V316H13ZM13 332V340H19V332H13ZM13 348V356H19V348H13ZM13 364V372H19V364H13ZM13 380L13 388H19V380H13ZM13 396V404H19L19 396H13ZM13 412V420H19V412H13ZM13 428V432H19V428H13Z" fill="white"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="140" viewBox="0 0 32 140" fill="none">
+                    <path d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM13 16V19.875H19V16H13ZM13 27.625L13 35.375H19V27.625H13ZM13 43.125V50.875H19L19 43.125H13ZM13 58.625V66.375H19V58.625H13ZM13 74.125V81.875H19V74.125H13ZM13 89.625L13 97.375H19V89.625H13ZM13 105.125V112.875H19V105.125H13ZM13 120.625V128.375H19V120.625H13ZM13 136.125V140H19V136.125H13Z" fill="white"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="349" viewBox="0 0 32 349" fill="none">
+                    <path d="M16 349C24.8366 349 32 341.837 32 333C32 324.163 24.8366 317 16 317C7.16344 317 0 324.163 0 333C0 341.837 7.16344 349 16 349ZM19 333V328.838H13V333H19ZM19 320.513V312.188H13L13 320.513H19ZM19 303.862V295.537H13L13 303.862H19ZM19 287.212L19 278.887H13L13 287.212H19ZM19 270.562L19 262.237H13L13 270.562H19ZM19 253.912V245.588H13L13 253.912H19ZM19 237.263V228.938H13L13 237.263H19ZM19 220.613V212.288H13V220.613H19ZM19 203.963V195.638H13L13 203.963H19ZM19 187.313V178.988H13L13 187.313H19ZM19 170.663L19 166.5H13V170.663H19ZM19 166.5V162.338H13L13 166.5H19ZM19 154.013L19 145.688H13L13 154.013H19ZM19 137.362V129.037H13L13 137.362H19ZM19 120.712V112.387H13L13 120.712H19ZM19 104.062V95.7375H13V104.062H19ZM19 87.4125V79.0875H13V87.4125H19ZM19 70.7625V62.4375H13L13 70.7625H19ZM19 54.1125L19 45.7875H13L13 54.1125H19ZM19 37.4625L19 29.1375H13L13 37.4625H19ZM19 20.8125L19 12.4875H13L13 20.8125H19ZM19 4.16253V0H13V4.16253H19Z" fill="white"/>
+                </svg>                
             </div>
-            <img src="./img/3.jpg" alt="">
-        </div>
-
-        <div class="leftimg">
-            <div class="titles-r">
-                <h2>日本風情</h2>
-                <p>新北投的歷史悠久，曾是貴族與知識分子的聚集地，至今仍保留著濃厚的日治時期風情，令人懷舊。</p>
-                <a href="" class="read-more"></a>
-            </div>
-            <img src="./img/25.jpg" alt="">
-        </div>
-
-
-            <!-- multi-banners -->
-        <div class="multi-banners">
-            <h2>更多歷史</h2>
-            <div class="multi-banners-out">
-                <div class="multi-banners-in">
-                    <img src="./img/21.jpg" alt="">
-                    <h3>浴療文化</h3>
-                    <p>新北投是台灣最古老的溫泉區之一，擁有超過百年的歷史，從日治時期便成為台灣浴療文化的發源地。</p>
+            <!-- cards -->
+             <div class="timeline-cards">
+                <div class="tl-card">
+                    <div class="timeline-titles">
+                        <h2>日治時期（1895–1945）——溫泉文化的開端</h2>
+                        <p>日治時期，新北投開始發展成溫泉療養地。日本人於1896年發現白磺泉後，興建溫泉旅館與...</p>
+                        <a href="#" class="read-more">閱讀更多</a>
+                    </div>
+                    <img src="./img/timeline_card_1.png" alt="">
                 </div>
-                <div class="multi-banners-in">
-                    <img src="./img/13.jpg" alt="">
-                    <h3>見證者</h3>
-                    <p>不僅是溫泉的故鄉，也是台灣歷史的重要見證者，早期的溫泉設施至今依然散發著歷史的氣息。</p>
+                <div class="tl-card">
+                    <div class="timeline-titles">
+                        <h2>國民政府時期（1945–1980）——溫泉的繁榮與轉型</h2>
+                        <p>國民政府接管後，新北投溫泉進一步繁榮，成為台北人休閒的重要選擇。這時期湧現許多...</p>
+                        <a href="#" class="read-more">閱讀更多</a>
+                    </div>
+                    <img src="./img/timeline_card_2.png" alt="">
                 </div>
-                <div class="multi-banners-in">
-                    <img src="./img/19.jpg" alt="">
-                    <h3>古今交錯</h3>
-                    <p>新北投的歷史悠久，曾是台灣的溫泉聖地，至今仍保留著歷史建築，讓人沉浸在過去與現在的交錯之中。</p>
+                <div class="tl-card">
+                    <div class="timeline-titles">
+                        <h2>現代時期（1980至今）——溫泉文化的復興</h2>
+                        <p>現代新北投以結合自然、文化與現代設計的方式重塑溫泉旅遊。北投溫泉博物館與...</p>
+                        <a href="#" class="read-more">閱讀更多</a>
+                    </div>
+                    <img src="./img/timeline_card_3.png" alt="">
                 </div>
+             </div>
+            
+        </div>
+
+        <!-- staggered -->
+        <div class="random" id="random">
+            <img src="img/bg_straggered_1.png" alt="" class="mid-base">
+            <img src="img/onsen_mine_1.png" alt="" class="random-img-first">
+            <img src="img/onsen_mine_2.png" alt="" class="random-img-second">
+            <img src="img/onsen_mine_3.png" alt="" class="random-img-third">              
+            <div class="random-tit-first">
+                <h2>古時的溫泉開發</h2>
+                <p>新北投的溫泉在清朝時期便被當地居民發現，當時人們發現這片土地不僅擁有豐富的自然資源，還擁有天然的溫泉，成為當地居民生活的一部分。溫泉的治療效果也吸引了不少遠來的商旅。</p>
+                <a href="#" class="read-more">閱讀更多</a>
+            </div>
+            <div class="random-tit-second">
+                <p><span>日治時期</span>，新北投的溫泉資源進一步開發，當時的日本人引進了更多現代化的設施，並將其打造為具有國際水準的度假勝地。這一時期，溫泉成為了觀光與療癒的象徵，吸引了大量的遊客和治療需要者。</p>
+            </div>
+            <div class="random-tit-third">
+                <h2>現代</h2>
+                <p>隨著現代化的發展，新北投的溫泉不僅保留了傳統的療癒效果，也融入了現代的設施與文化，成為一個休閒度假、享受自然與現代舒適的場所。如今，新北投溫泉區成為台灣最受歡迎的旅遊景點之一。</p>
+                <a href="#" class="read-more">閱讀更多</a>
             </div>
         </div>
+
         <!-- difference -->
-        <div class="two-banners">
-            <h2>新舊北投</h2>
+        <div class="two-banners" id="two-banners">
+            <h2>舊北投？新北投？</h2>
             <div class="two-banners-out">
                 <div class="two-banners-in">
-                    <img src="./img/6.jpg" alt="">
-                    <h3>新北投</h3>
-                    <p>早期人們為了溫泉，從原本的北投鐵路路線，特地拉一條分支，直達溫泉聚集地:新北投</p>
+                    <img src="img/old_beitou.png" alt="">
+                    <h3>舊北投</h3>
+                    <p>舊北投位於現在的北投市區一帶（靠近捷運北投站）。這裡是北投最早發展的地方，因靠近基隆河而便於耕作與生活，是清朝時期的主要聚落中心。</p>
                 </div>
                 <div class="two-banners-in">
-                    <img src="./img/11.jpg" alt="">
-                    <h3>舊北投</h3>
-                    <p>其實新、舊北投兩地相差沒多遠，為了區分新北投和原本地區，當地人稱北投捷運站附近為舊北投</p>
+                    <img src="img/new_beitou.png" alt="">
+                    <h3>新北投</h3>
+                    <p>新北投位於舊北投的東北方，緊鄰陽明山系，靠近今日的捷運新北投站一帶。1896年，日治政府在這片溫泉豐富的區域進行開發，建立了溫泉旅館與療養設施，使其成為觀光與休閒的重點地區。</p>
                 </div>
             </div>
         </div>
 
     </main>
+
     <!-- footer -->
     <footer>
         <ul class="out-list">
             <li>
-                <p>探索新北投</p>
+                <h4>探索新北投</h4>
                 <ul class="in-list">
                     <li><a href="">即時影像</a></li>
                     <li><a href="">你好，新北投</a></li>
                     <li><a href="">城鎮故事</a></li>
                 </ul>
             </li>
-            <li><p>活動新訊</p>
+            <li>
+                <h4>活動新訊</h4>
                 <ul class="in-list">
                     <li><a href="">最新消息</a></li>
                     <li><a href="">活動展演</a></li>
                     <li><a href="">熱門話題</a></li>
                 </ul></li>
-            <li><p>旅遊指南</p>
+            <li>
+                <h4>旅遊指南</h4>
                 <ul class="in-list">
                     <li><a href="">必吃美食</a></li>
                     <li><a href="">必遊景點</a></li>
                     <li><a href="">景點地圖</a></li>
                 </ul></li>
-            <li><p>我們的社群</p>
+            <li>
+                <h4>我們的社群</h4>
                 <ul class="in-list">
-                    <li><a href="#">FB:newbetiou</a><img src="./img/fb.png" alt=""></li>
-                    <li><a href="#">IG:@newbetiou</a><img src="./img/instagram_2111463.png" alt=""></li>
-                    <li><a href="#">X:@newbetiou</a><img src="./img/X.png" alt=""></li>
-                </ul></li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                             NewBeitiou
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-line"></i>
+                             ID:newbeitiou006
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                             @newbeitiou
+                        </a>
+                        
+                    </li>
+                </ul>
+            </li>
         </ul>
         <p class="copyright">Copy rights here</p>
     </footer>
 
-    <a href="#top" class="backtotop">top</a>
+    <!-- button back-to-top -->
+    <a href="#top" class="back-to-top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </a>
 
+<!-- font awsome -->
+<script src="https://kit.fontawesome.com/2474fb8bba.js" crossorigin="anonymous"></script>
+<!-- JS & JQuery -->
 </body>
 </html>
