@@ -17,13 +17,13 @@
 /* -----------button of read-more---------- */
 .read-more {
     display: block;
-    width: 144px;
+    width: minmax(0,144px);
     line-height: 32px;
     padding: 4px 12px;
     box-sizing: border-box;
     background-color: var(--background-color);
     color: #000;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-decoration: none;
     text-align: center;
     border-radius: 7px;

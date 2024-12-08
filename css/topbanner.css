@@ -18,9 +18,15 @@
 
 #top{}
 
+.base{
+    padding: 15px 40px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background: rgba(86, 90, 110, 0.48);
+}
+
 .top-banner h1{
     font-size: 4rem;
-    margin-bottom: 15px;
 }
 
 .top-banner p{

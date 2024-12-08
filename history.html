@@ -17,35 +17,39 @@
 <body>
     
     <header>
-        
-        <!-- logo -->
-        <div class="logo">
-           <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
-       </div>
-           <!-- navigation list-->
-       <div class="nav-fav">
-           <ul class="navigation">
-            <li><a href="hotspring.html" class="page-switcher" id="hotspring">溫泉</a></li>
-            <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
-            <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
-            <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
-           </ul>
-           <a href="myfav.html"><i class="fa-solid fa-heart"></i></a>
-           <a href="myfav.html"><i class="fa-solid fa-user"></i></a>
-           
-       </div>
-       
-       
-   </header>
+        <div class="header-container">
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
+            </div>
+
+            <!-- 漢堡按鈕 -->
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- navigation list-->        
+            <ul class="navigation">
+                <li><a href="hotspring.html" class="page-switcher" id="hotspring">溫泉</a></li>
+                <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
+                <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
+                <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
+            </ul>            
+        </div>                   
+    </header>
 
     <main>
 
         <!-- top banner -->
         <div class="top-banner" id="top">
-            <h1>新北投歷史</h1>
-            <p>讓我們一起探索新北投的百年歷史</p>
+            <div class="base">                
+                <h1>新北投歷史</h1>
+                <p>讓我們一起探索新北投的百年歷史</p>
+            </div>            
         </div>
-
+        
         <!-- inpage nav -->
         <ul class="inpage-nav">
             <li><a href="#timeline">時間線</a></li>
@@ -200,5 +204,6 @@
 <!-- font awsome -->
 <script src="https://kit.fontawesome.com/2474fb8bba.js" crossorigin="anonymous"></script>
 <!-- JS & JQuery -->
+ <script src="js/history.js"></script>
 </body>
 </html>

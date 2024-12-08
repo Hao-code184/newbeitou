@@ -17,139 +17,185 @@
 <body>
     
     <header>
-        
-         <!-- logo -->
-         <div class="logo">
-            <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
-        </div>
+        <div class="header-container">
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
+            </div>
 
-         <!-- 漢堡按鈕 -->
-        <div class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+            <!-- 漢堡按鈕 -->
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
             <!-- navigation list-->
-        <div class="nav">
-            <ul class="navigation">
-                <li><a href="hotspring.html" class="page-switcher" id="hotspring">溫泉</a></li>
-                <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
-                <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
-                <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
-            </ul>
-        </div>
-        
-        
+            <div class="header-inner">
+                <ul class="navigation">
+                    <li id="hotspring-switcher">
+                        <a href="hotspring.html" class="page-switcher" id="hotspring">溫泉 ▼</a>
+                        <!-- 子選單 -->
+                        <ol class="nav-in-list">
+                            <li class="page-switcher">介紹泉水</li>
+                            <li class="page-switcher">飯店推介</li>
+                            <li class="page-switcher">湯屋推介</li>
+                        </ol>
+                    </li>
+                    <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
+                    <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
+                    <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
+                </ul>
+                <a href="#" class="read-more sign-in" >註冊/登入</a>
+            </div>          
+        </div>                   
     </header>
 
     <main>
 
         <!-- top banner -->
         <div class="top-banner" id="top">
-            <h1>放鬆<br>
-                 IN <br>
-                <span>New Beitou</span> </h1>
-            <p></p>
+            <div class="base">                
+                <h1>New Beitou</h1>
+                <p>Just Relax</p>
+            </div>            
         </div>
 
         <!-- top titles -->
          <div class="top-titles">
-            <h1 class="opening">歡迎來到New Beitou</h1>
+            <h1 class="opening typing">歡迎來到New Beitou</h1>
             <p>New Beitou(中文 : 新北投)，這是一個讓人放鬆的小鎮，有溫泉、公園、按摩、古蹟...等，很多東西等著你去探索，跟著我們一起逃離喧囂吧!</p>
             <a href="#" class="jump read-more">一鍵放鬆去!</a>
          </div>
         
         
 
-        <!-- activity news -->
+        <!-- activities -->
         <div class="avtivities">
-            <h2>活動消息</h2>            
-            <ul class="avtivities-banners">
-                <li>
-                    <a href="#">
-                        <img src="./img/activity_1-1.png" alt="" loading="lazy">
-                        <h3>溫泉祭</h3>
-                        <p>每年秋去冬來，一定會舉辦的祭典!聽說這次有點不一樣...</p>
-                    </a>                        
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/activity_1-2.png" alt="" loading="lazy">
-                        <h3>女巫季</h3>
-                        <p>"女巫"一詞來自先民對蒸氣升騰的想像，女巫季是每四年...</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/activity_1-3.png" alt="" loading="lazy">
-                        <h3>小型音樂會</h3>
-                        <p>今年在北投公園的音樂廣場，邀您一起來聽音樂，享受...</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/activity_1-4.png" alt="">
-                        <h3>復活節與溫泉蛋</h3>
-                        <p>結合復活節與溫泉蛋，將找到的溫泉蛋交給店家...</p>
-                    </a>
-                </li>
-            </ul>
+            <h2>最新消息</h2>  
+            <!-- cards -->
+            <section class="cards">
+                <ul class="cards-list"> <!-- 未來可以新增頁面 -->
+                    <li>
+                        <ul class="avtivities-cards">
+                            <li>
+                                <a href="#">
+                                    <div class="inner">
+                                        <img src="./img/activity_1-1.png" alt="" loading="lazy">
+                                        <h3>溫泉祭，每年秋去冬來，一定會舉辦的祭典!聽說...</h3>
+                                        <p><span>By </span>北投溫泉推廣協會.2024/12/09.最新消息</p>
+                                    </div>
+                                </a>                        
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="inner">
+                                        <img src="./img/activity_1-1.png" alt="" loading="lazy">
+                                        <h3>溫泉祭，每年秋去冬來，一定會舉辦的祭典!聽說...</h3>
+                                        <p><span>By </span>北投溫泉推廣協會.2024/12/09.最新消息</p>
+                                    </div>
+                                </a>                        
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="inner">
+                                        <img src="./img/activity_1-1.png" alt="" loading="lazy">
+                                        <h3>溫泉祭，每年秋去冬來，一定會舉辦的祭典!聽說...</h3>
+                                        <p><span>By </span>北投溫泉推廣協會.2024/12/09.最新消息</p>
+                                    </div>
+                                </a>                        
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="inner">
+                                        <img src="./img/activity_1-1.png" alt="" loading="lazy">
+                                        <h3>溫泉祭，每年秋去冬來，一定會舉辦的祭典!聽說...</h3>
+                                        <p><span>By </span>北投溫泉推廣協會.2024/12/09.最新消息</p>
+                                    </div>
+                                </a>                        
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="inner">
+                                        <img src="./img/activity_1-1.png" alt="" loading="lazy">
+                                        <h3>溫泉祭，每年秋去冬來，一定會舉辦的祭典!聽說...</h3>
+                                        <p><span>By </span>北投溫泉推廣協會.2024/12/09.最新消息</p>
+                                    </div>
+                                </a>                        
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="inner">
+                                        <img src="./img/activity_1-1.png" alt="" loading="lazy">
+                                        <h3>溫泉祭，每年秋去冬來，一定會舉辦的祭典!聽說...</h3>
+                                        <p><span>By </span>北投溫泉推廣協會.2024/12/09.最新消息</p>
+                                    </div>
+                                </a>                        
+                            </li>                            
+                        </ul>
+                    </li>                    
+                </ul>
+                <div class="side-bar">
+                    <div class="subscribe">
+                        <h3>訂閱消息</h3>
+                        <!-- ::after -->
+                        <input type="text" placeholder="*姓名">
+                        <input type="email" placeholder="*信箱">
+                        <a href="#" class="read-more">訂閱我們</a>
+                    </div>
+                </div>
+            </section>
+            
             <!-- 下方切換紐 -->
-            <ul class="activity-switcher">
-                <li data-slide="0"></li>
-                <li data-slide="1"></li>
-                <li data-slide="2"></li>
-                <li data-slide="3"></li>
-                <li data-slide="4"></li>
-                <li data-slide="5"></li>
+            <ul class="activities-switcher">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
             </ul>
         </div> 
 
         <!-- four icons -->
-        <div class="four-icons">    
-            <ul class="four-icons-titles" id="scroll-show-container">
-                <li id="scroll-show-0">
-                    <h2>四大特色</h2>
-                    <p>新北投，一座溫泉療癒、歷史傳承、建築美學、自然風光交織的心靈休憩地。</p>
-                    <a href="#" class="read-more">閱讀更多</a>
-                </li>
-                <!-- <li id="scroll-show-1">
-                    <h3>溫泉</h3>
+        <div class="four-icons">
+            <div class="fi-container">
+              <ul class="fi-card-list">
+                <li class="fi-card">
+                  <div class="fi-inner-titles">
+                    <h2>溫泉</h2>
                     <p>溫泉水質多樣，無論舒緩疲勞或放鬆身心，都是療癒的最佳選擇！</p>
+                  </div>
+                  <div class="fi-icon i-one">
+                    <a href=""><img src="img/icon-hotspring-removebg-preview.png" alt=""></a>
+                  </div>
                 </li>
-                <li id="scroll-show-2">
-                    <h3>歷史</h3>
-                    <p>有百年溫泉文化，從溫泉博物館到地熱谷，處處都是歷史的見證！</p>
-                </li>
-                <li id="scroll-show-3">
-                    <h3>建築</h3>
+                <li class="fi-card">
+                  <div class="fi-inner-titles">
+                    <h2>建築</h2>
                     <p>融合日式溫泉館與在地特色建築，展現歷史與現代美學的完美交融。</p>
+                  </div>
+                  <div class="fi-icon i-second">
+                    <a href=""><img src="img/icon-building-removebg-preview.png" alt=""></a>
+                  </div>
                 </li>
-                <li id="scroll-show-4">
-                    <h3>自然</h3>
+                <li class="fi-card">
+                  <div class="fi-inner-titles">
+                    <h2>歷史</h2>
+                    <p>有百年溫泉文化，從溫泉博物館到地熱谷，處處都是歷史的見證！</p>
+                  </div>
+                  <div class="fi-icon i-third">
+                    <a href=""><img src="img/iicon-history-removebg-preview.png" alt=""></a>
+                  </div>
+                </li>
+                <li class="fi-card">
+                  <div class="fi-inner-titles">
+                    <h2>自然</h2>
                     <p>擁有溫泉溪、地熱谷等自然奇景，讓人親近大自然，感受純淨與寧靜。</p>
-                </li> -->
-            </ul>
-
-            <ul class="four-icons-content">
-                <li class="four-icons-in"><img src="./img/hot-spring_13329772.png" alt="">
-                    <h3>溫泉</h3>
-                    
+                  </div>
+                  <div class="fi-icon i-fourth">
+                    <a href=""><img src="img/icon-nature-removebg-preview.png" alt=""></a>
+                  </div>
                 </li>
-                <li class="four-icons-in"><img src="./img/parchment_2682065.png" alt="">
-                    <h3>歷史</h3>
-                    
-                </li>
-                <li class="four-icons-in"><img src="./img/temple_1664985.png" alt="">
-                    <h3>建築</h3>
-                    
-                </li>
-                <li class="four-icons-in"><img src="./img/nature_2823530.png" alt="">
-                    <h3>自然</h3>
-                    
-                </li>
-            </ul>
+              </ul>
+            </div>
         </div>
 
         <!-- map -->
@@ -169,7 +215,7 @@
             </div>
             <ul class="rec-cards">
                 <li>
-                    <img src="" alt="" loading="lazy">
+                    <img src="img/in_5-1.svg" alt="" loading="lazy">
                     <div class="card-info">
                         <h3>新北投冷海大飯店</h3>
                         <!-- star -->
@@ -185,7 +231,7 @@
                 </li>
                 <!-- li再+2 -->
                 <li>
-                    <img src="" alt="" loading="lazy">
+                    <img src="img/in_5-2.svg" alt="" loading="lazy">
                     <div class="card-info">
                         <h3>新北投夫人酒店</h3>
                         <!-- star -->
@@ -200,7 +246,7 @@
                     </div>        
                 </li>
                 <li>
-                    <img src="" alt="" loading="lazy">
+                    <img src="img/in_5-3.svg" alt="" loading="lazy">
                     <div class="card-info">
                         <h3>水噹噹溫泉會館</h3>
                         <!-- star -->

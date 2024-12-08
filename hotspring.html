@@ -17,33 +17,48 @@
 <body>
     
     <header>
-        
-        <!-- logo -->
-        <div class="logo">
-           <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
-       </div>
-           <!-- navigation list-->
-       <div class="nav-fav">
-           <ul class="navigation">
-            <li><a href="hotspring.html" class="page-switcher" id="hotspring">溫泉</a></li>
-            <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
-            <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
-            <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
-           </ul>
-           <a href="myfav.html"><i class="fa-solid fa-heart"></i></a>
-           <a href="myfav.html"><i class="fa-solid fa-user"></i></a>
-           
-       </div>
-       
-       
-   </header>
+        <div class="header-container">
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html"><img id="logo-header" src="./img/logo.png" alt=""></a>
+            </div>
+
+            <!-- 漢堡按鈕 -->
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- navigation list-->
+            <div class="header-inner">
+                <ul class="navigation">
+                    <li id="hotspring-switcher">
+                        <a href="hotspring.html" class="page-switcher" id="hotspring">溫泉 ▼</a>
+                        <!-- 子選單 -->
+                        <ol class="nav-in-list">
+                            <li class="page-switcher">介紹泉水</li>
+                            <li class="page-switcher">飯店推介</li>
+                            <li class="page-switcher">湯屋推介</li>
+                        </ol>
+                    </li>
+                    <li><a href="history.html" class="page-switcher" id="history">歷史</a></li>
+                    <li><a href="buildings.html" class="page-switcher" id="buildings">建築</a></li>
+                    <li><a href="nature.html" class="page-switcher" id="nature">自然</a></li>
+                </ul>
+                <a href="#" class="read-more sign-in" >註冊/登入</a>
+            </div>          
+        </div>                   
+    </header>
 
     <main>
 
         <!-- top banner -->
         <div class="top-banner" id="top">
-            <h1>溫泉之鄉</h1>
-            <p>沉浸溫泉的靜謐，感受新北投的魅力</p>
+            <div class="base">                
+                <h1>溫泉之鄉</h1>
+                <p>沉浸溫泉的靜謐，感受新北投的魅力</p>
+            </div>            
         </div>
 
         <!-- inpage nav -->
@@ -92,19 +107,28 @@
                 <p>北投文物館附設的湯屋以白磺泉為特色，結合傳統日式建築與濃厚的歷史氛圍，是享受白磺泉的理想地點。</p>
                 <a href="#" class="read-more">閱讀更多</a>
             </div>
-            <img src="img/hot-spring_rec_1.png" alt="" class="a-2">
+            <div class="cr-i-wrapper a-2">
+                <img src="img/hot-spring_rec_1.png" alt="">
+            </div>
+            
             <div class="box b-2">
                 <h2>大天酒店</h2>
                 <p>大天酒店提供優質的青磺泉泡湯體驗，設有高端私人湯池，環境幽靜，適合尋求高品質溫泉享受的旅客。</p>
                 <a href="#" class="read-more">閱讀更多</a>
             </div>
-            <img src="img/hot-spring_rec_2.png" alt="" class="b-1">
+            <div class="cr-i-wrapper b-1">
+                <img src="img/hot-spring_rec_2.png" alt="">
+            </div>
+            
             <div class="box c-1">
                 <h2>皇家池溫泉御膳館</h2>
                 <p>這裡以鐵硫泉聞名，提供露天池與個人湯屋，還有中藥加溫泉的特色療法，是感受鐵硫泉特性的好地方。</p>
                 <a href="#" class="read-more">閱讀更多</a>
             </div>
-            <img src="img/hot-spring_rec_3.png" alt="" class="c-2">
+            <div class="cr-i-wrapper c-2">
+                <img src="img/hot-spring_rec_3.png" alt="">
+            </div>
+            
         </div>
         
         <!-- staggered -->
@@ -195,5 +219,6 @@
 <!-- font awsome -->
 <script src="https://kit.fontawesome.com/2474fb8bba.js" crossorigin="anonymous"></script>
 <!-- JS & JQuery -->
+ <script src="js/hotspring.js"></script>
 </body>
 </html>

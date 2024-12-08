@@ -23,19 +23,6 @@ main{}
     font-weight: bold;
 }
 
-/* #hotspring::before {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 10px;
-    background-color: darkslategray;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-} */
 
 /* top banner */
 
@@ -71,7 +58,7 @@ main{}
     margin: 0 auto;
     width: 80vw;
     display: flex;  /*斷點時flex-wrap:wrap*/
-    gap: 40px;  
+    gap: 20px;  
 }
 
 .three-banners-out li{
@@ -133,3 +120,108 @@ main{}
 
 /* footer */
 
+
+/* RWD */
+/* 820 */
+@media screen and (max-width:820px) {
+    .inpage-nav{
+        margin-bottom: 50px;
+    }
+
+    .three-banners{
+        margin-bottom: 0;
+    }
+
+    .three-banners-out{
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+
+    .three-banners-out li{
+        width: 38vw;
+    }
+
+    .three-banners-out:last-child{
+        justify-self: center;
+        margin-bottom: 10vh;
+    }
+
+    .random{
+        padding: 0 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .random img{
+        position: unset;
+    }
+
+    .random-tit-first,.random-tit-second,.random-tit-third{
+        position: unset;
+    }
+
+    .random img:nth-of-type(1){
+        display: none;
+    }
+
+    .random-img-first{
+        width: 60vw;
+        order: 1;
+    }
+
+    .random-tit-first{
+        width: 35vw;
+        padding: 10px;
+        order: 2;
+    }
+
+    .random-tit-second{
+        order: 3;
+    }
+
+    .random-img-second{
+        width: 60vw;
+        order: 4;
+    }
+
+    .random-img-third{
+        order: 5;
+    }
+
+    .random-tit-third{
+        width: 35vw;
+        order: 6;
+        padding: 10px;
+    }
+    
+
+    
+}
+
+/* 430 */
+@media screen and (max-width:430px) {
+    .inpage-nav li a{
+        padding: 0 4vw;
+        font-size: 1.6rem;
+    }
+
+    .three-banners-out li{
+        width: 100%;
+    }
+
+    .cross{
+        padding: 0 4vw;
+
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "a-2"
+            "a-1"
+            "b-1" 
+            "b-2"
+            "c-2"
+            "c-1";
+        gap: 1vw;
+    }
+}
