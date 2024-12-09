@@ -625,6 +625,7 @@ to {
 }
 
 .answer{
+    width: 100%;
     background-color: #FFFDD0;
     padding: 15px;
     box-sizing: border-box;
