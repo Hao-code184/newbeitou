@@ -136,6 +136,7 @@ header{
     .hamburger-menu {
         display: flex; /* 顯示漢堡 */
         margin-left: auto;
+        transition: 1s;
     }
 
     .navigation {

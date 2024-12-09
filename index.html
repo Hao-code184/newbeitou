@@ -205,15 +205,15 @@
         </div>
 
         <!-- recommonds -->
-        <div class="recommonds">
+        <div class="recommonds search-container">
             <div class="title-search">
                 <h2>熱門泡湯飯店推薦</h2>
                 <div class="search-bar">
-                    <input type="search" class="search">
+                    <input type="text" class="search" id="search-input" placeholder="請輸入關鍵字">
                     <i class="fa-solid fa-magnifying-glass-location fa-bounce"></i>
                 </div>
             </div>
-            <ul class="rec-cards">
+            <ul class="rec-cards"  id="result-list">
                 <li>
                     <img src="img/in_5-1.svg" alt="" loading="lazy">
                     <div class="card-info">
@@ -261,7 +261,7 @@
                     </div>        
                 </li>
             </ul>
-
+            <p id="no-result" style="display: none;">無匹配結果</p>
             <a href="#" class="read-more">查看更多...</a>
 
         </div>

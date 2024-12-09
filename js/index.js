@@ -16,6 +16,36 @@ document.querySelector('.back-to-top').addEventListener('click', (e) => {
   });
   
 
+// (待修)recommond 的 搜尋
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("search-input");
+  const resultList = document.getElementById("result-list");
+  const noResult = document.getElementById("no-result");
+
+  searchInput.addEventListener("input", () => {
+      const query = searchInput.value.toLowerCase(); // 將輸入轉為小寫
+      const items = resultList.getElementsByTagName("li");
+      let hasMatch = false;
+
+      // 遍歷每個項目，檢查是否包含關鍵字
+      for (const item of items) {
+          if (item.textContent.toLowerCase().includes(query)) {
+              item.classList.remove("hidden"); // 顯示匹配的項目
+              hasMatch = true;
+          } else {
+              item.classList.add("hidden"); // 隱藏不匹配的項目
+          }
+      }
+
+      // 如果沒有匹配項目，顯示提示
+      noResult.style.display = hasMatch ? "none" : "block";
+  });
+});
+
+
+
+
+
 // FAQ 展開/收合
 document.querySelectorAll('.faq .question').forEach(question => {
     question.addEventListener('click', () => {
