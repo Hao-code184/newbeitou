@@ -9,58 +9,42 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 
-// activity的簡易橫向滑動
-const switcherItems = document.querySelectorAll('.activity-switcher li');
-const banners = document.querySelector('.avtivities-banners ul');
-const slides = banners.children; // 所有的幻燈片
+// 3 buttons 切換
+document.addEventListener("DOMContentLoaded", () => {
+  // 取得所有的按鈕
+  const buttons = document.querySelectorAll(".buttons-area li");
+  // 取得所有的內容區塊
+  const titles = document.querySelectorAll(".buttons-titles");
 
-// 設置每張幻燈片的寬度（需與 CSS 中的卡片寬度一致）
-const slideWidth = 300 + 20; // 卡片寬度 + 間距
-let currentIndex = 0; // 當前顯示的幻燈片索引
+  // 綁定點擊事件
+  buttons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+          // 隱藏所有內容區塊
+          titles.forEach(title => {
+              title.style.display = "none";
+          });
 
-// 初始化：克隆首尾元素以實現無限滾動
-const firstSlideClone = slides[0].cloneNode(true);
-const lastSlideClone = slides[slides.length - 1].cloneNode(true);
-banners.appendChild(firstSlideClone); // 克隆第一張到最後
-banners.insertBefore(lastSlideClone, slides[0]); // 克隆最後一張到最前
+          // 顯示對應的內容
+          if (index === 0) {
+              document.getElementById("nb-hs-musuem").style.display = "block";
+          } else if (index === 1) {
+              document.getElementById("bt-obj-museum").style.display = "block";
+          } else if (index === 2) {
+              document.getElementById("er-temple").style.display = "block";
+          }
 
-// 更新 banners 寬度
-banners.style.width = `${(slides.length + 2) * slideWidth}px`;
+          // 更新按鈕的樣式（可選）
+          buttons.forEach(btn => btn.classList.remove("active"));
+          button.classList.add("active");
+      });
+  });
 
-// 更新幻燈片位置
-function updateSlide(index, instant = false) {
-    currentIndex = index;
-    const offset = -(slideWidth * currentIndex); // 計算偏移量
-    banners.style.transition = instant ? 'none' : 'transform 0.3s ease'; // 平滑或無動畫
-    banners.style.transform = `translateX(${offset}px)`;
-
-    // 更新切換按鈕的狀態（排除克隆的索引）
-    const realIndex = (index - 1 + switcherItems.length) % switcherItems.length;
-    switcherItems.forEach((item, idx) => {
-        item.classList.toggle('active', idx === realIndex);
-    });
-}
-
-// 初始設定：移動到第一個克隆的幻燈片
-updateSlide(1, true);
-
-// 無縫切換的修正
-banners.addEventListener('transitionend', () => {
-    if (currentIndex === 0) {
-        // 從首張克隆跳轉到最後一張實際幻燈片
-        updateSlide(slides.length - 2, true);
-    } else if (currentIndex === slides.length - 1) {
-        // 從末張克隆跳轉到第一張實際幻燈片
-        updateSlide(1, true);
-    }
+  // 初始顯示第一個內容
+  titles.forEach((title, idx) => {
+      title.style.display = idx === 0 ? "block" : "none";
+  });
 });
 
-// 添加切換按鈕點擊事件
-switcherItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-        updateSlide(index + 1); // 索引加 1，因為有克隆的首尾
-    });
-});
 
 
 
